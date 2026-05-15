@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clara Excel Academy | HRDC 认可 Excel & AI 培训 | Malaysia</title>
-<meta name="description" content="马来西亚 HRDC 认可 Excel & AI 培训讲师 Clara Tan Chai Fang。从初级到高级，线上课程，可申请 HRDC 津贴。">
-<link rel="icon" type="image/png" href="Clara%20Excel%20Acadmey%20logo.png">
+<title>Clara Excel Academy | HRDC Accredited Excel & AI Training | Malaysia</title>
+<meta name="description" content="HRDC accredited Excel & AI training by Clara Tan Chai Fang. Beginner to Advanced. Lifetime access. HRDC claimable. Designed for Malaysian professionals.">
+<link rel="icon" type="image/png" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -32,9 +32,9 @@
   .zh { font-family: 'Noto Sans SC', sans-serif; }
 
   /* NAV */
-  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 2rem; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 2rem; height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
   .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-  .nav-logo img { height: 44px; width: auto; display: block; }
+  .nav-logo img { height: 64px; width: auto; display: block; }
   .nav-links { display: flex; gap: 2rem; list-style: none; }
   .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 14px; font-weight: 500; transition: color 0.2s; }
   .nav-links a:hover { color: var(--green); }
@@ -44,10 +44,12 @@
   .lang-btn { background: none; border: none; padding: 7px 16px; border-radius: 7px; font-size: 13px; font-weight: 700; cursor: pointer; color: rgba(255,255,255,0.55); transition: all 0.2s; font-family: 'Noto Sans SC', sans-serif; white-space: nowrap; }
   .lang-btn:hover { color: white; background: rgba(255,255,255,0.1); }
   .lang-btn.active { background: var(--green); color: white; box-shadow: 0 2px 8px rgba(22,163,74,0.4); }
-  @media (max-width: 900px) { .lang-switcher, .nav-links { display: none; } }
+  @media (max-width: 900px) { .lang-switcher, .nav-links { display: none; } .nav-logo img { height: 48px; } nav { height: 72px; } }
 
   /* HERO */
-  .hero { padding: 120px 2rem 80px; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+  body { padding-top: 88px; }
+  @media (max-width: 900px) { body { padding-top: 72px; } }
+  .hero { padding: 60px 2rem 80px; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
   .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--green-light); color: var(--green-dark); font-size: 12px; font-weight: 600; padding: 5px 12px; border-radius: 20px; margin-bottom: 1.5rem; letter-spacing: 0.03em; text-transform: uppercase; }
   .hero-badge::before { content: '✓'; background: var(--green); color: white; width: 16px; height: 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; }
   .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 4vw, 3.5rem); font-weight: 900; color: var(--navy); line-height: 1.1; margin-bottom: 1.5rem; }
@@ -94,7 +96,6 @@
   .trust-item-text strong { display: block; font-size: 15px; font-weight: 600; }
   .trust-item-text span { font-size: 12px; color: rgba(255,255,255,0.6); }
 
-  /* SECTION SHARED */
   section { padding: 80px 2rem; }
   .section-inner { max-width: 1200px; margin: 0 auto; }
   .section-label { font-size: 11px; font-weight: 700; color: var(--green); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem; }
@@ -106,7 +107,6 @@
   .about-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: center; }
   .about-photo-frame { background: var(--green-light); border-radius: 24px; overflow: hidden; }
   .about-photo-frame .photo-area { height: 380px; background: linear-gradient(135deg, #16a34a, #22c55e); display: flex; align-items: center; justify-content: center; color: white; font-family: 'Playfair Display', serif; font-size: 96px; font-weight: 700; }
-  .about-photo-frame .photo-area img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
   .about-photo-frame .photo-area .photo-fallback { display: flex; align-items: center; justify-content: center; flex-direction: column; }
   .about-photo-frame .photo-area .photo-fallback small { font-family: 'DM Sans', sans-serif; font-size: 12px; opacity: 0.7; margin-top: 8px; }
   .about-photo-frame .photo-info { padding: 1.5rem; }
@@ -126,15 +126,15 @@
   .courses-wrap { max-width: 860px; margin: 0 auto; }
   .courses-header-area { text-align: center; margin-bottom: 2.5rem; }
   .included-banner { background: #1a3a1f; border-radius: 16px; padding: 1.4rem 2rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
-  .included-banner-title { font-family: 'Noto Sans SC', sans-serif; font-size: 13px; font-weight: 700; color: #fbbf24; white-space: nowrap; display: flex; align-items: center; gap: 6px; }
+  .included-banner-title { font-size: 13px; font-weight: 700; color: #fbbf24; white-space: nowrap; display: flex; align-items: center; gap: 6px; }
   .included-items { display: flex; flex-wrap: wrap; gap: 10px; flex: 1; }
-  .inc-item { display: flex; align-items: center; gap: 5px; font-family: 'Noto Sans SC', sans-serif; font-size: 12px; color: rgba(255,255,255,0.9); white-space: nowrap; }
+  .inc-item { display: flex; align-items: center; gap: 5px; font-size: 12px; color: rgba(255,255,255,0.9); white-space: nowrap; }
   .course-row { border-radius: 18px; overflow: hidden; margin-bottom: 14px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
   .course-row-header { padding: 1.1rem 1.6rem; display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none; }
   .cr-left { display: flex; align-items: center; gap: 14px; }
   .cr-num { width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.2); color: white; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
   .cr-name-block h3 { font-size: 19px; font-weight: 800; color: white; line-height: 1.1; display: flex; align-items: center; gap: 8px; }
-  .cr-name-block .cr-sub { font-family: 'Noto Sans SC', sans-serif; font-size: 12px; color: rgba(255,255,255,0.75); margin-top: 2px; }
+  .cr-name-block .cr-sub { font-size: 12px; color: rgba(255,255,255,0.75); margin-top: 2px; }
   .hot-badge { background: #ef4444; color: white; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px; }
   .best-badge { background: #fbbf24; color: #1a1a1a; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px; }
   .cr-right { display: flex; align-items: center; gap: 16px; }
@@ -146,10 +146,10 @@
   .course-row-body { background: white; display: none; padding: 1.6rem; }
   .course-row.open .course-row-body { display: block; }
   .cr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; margin-bottom: 1.2rem; }
-  .cr-feature { display: flex; align-items: flex-start; gap: 8px; font-size: 13.5px; color: #1e293b; font-family: 'Noto Sans SC', sans-serif; padding: 4px 0; }
+  .cr-feature { display: flex; align-items: flex-start; gap: 8px; font-size: 13.5px; color: #1e293b; padding: 4px 0; }
   .cr-check { color: #16a34a; font-size: 13px; font-weight: 700; margin-top: 2px; flex-shrink: 0; }
   .cr-includes { display: flex; flex-wrap: wrap; gap: 8px; padding: 1rem 0; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; margin-bottom: 1.2rem; }
-  .cr-pill { display: inline-flex; align-items: center; gap: 5px; padding: 5px 13px; border-radius: 30px; font-size: 12px; font-weight: 600; font-family: 'Noto Sans SC', sans-serif; white-space: nowrap; }
+  .cr-pill { display: inline-flex; align-items: center; gap: 5px; padding: 5px 13px; border-radius: 30px; font-size: 12px; font-weight: 600; white-space: nowrap; }
   .pill-video { background: #dcfce7; color: #15803d; }
   .pill-cert { background: #fef3c7; color: #92400e; }
   .pill-wa { background: #d1fae5; color: #065f46; }
@@ -157,17 +157,17 @@
   .pill-kit { background: #fce7f3; color: #9d174d; }
   .pill-tpl { background: #ede9fe; color: #5b21b6; }
   .cr-enroll-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
-  .cr-hrdc { font-size: 12px; color: #16a34a; font-weight: 600; font-family: 'Noto Sans SC', sans-serif; }
-  .cr-enroll-btn { display: inline-flex; align-items: center; gap: 7px; background: #25d366; color: white; padding: 10px 22px; border-radius: 30px; font-size: 13px; font-weight: 700; text-decoration: none; font-family: 'Noto Sans SC', sans-serif; transition: all 0.2s; }
+  .cr-hrdc { font-size: 12px; color: #16a34a; font-weight: 600; }
+  .cr-enroll-btn { display: inline-flex; align-items: center; gap: 7px; background: #25d366; color: white; padding: 10px 22px; border-radius: 30px; font-size: 13px; font-weight: 700; text-decoration: none; transition: all 0.2s; }
   .cr-enroll-btn:hover { background: #1da851; transform: translateY(-1px); }
   .theme-mini   .course-row-header { background: linear-gradient(135deg, #1d7a3a, #22c55e); }
   .theme-beg    .course-row-header { background: linear-gradient(135deg, #1e5ba8, #3b82f6); }
   .theme-int    .course-row-header { background: linear-gradient(135deg, #c2410c, #f97316); }
   .theme-adv    .course-row-header { background: linear-gradient(135deg, #6d28d9, #a855f7); }
   .theme-bundle .course-row-header { background: linear-gradient(135deg, #0f172a, #1e3a5f); }
-  .bundle-savings { background: #fef3c7; border-radius: 10px; padding: 0.8rem 1rem; margin-bottom: 1rem; font-family: 'Noto Sans SC', sans-serif; font-size: 13px; color: #92400e; }
+  .bundle-savings { background: #fef3c7; border-radius: 10px; padding: 0.8rem 1rem; margin-bottom: 1rem; font-size: 13px; color: #92400e; }
   .bundle-includes { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 1.2rem; }
-  .bundle-item { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 10px 14px; font-family: 'Noto Sans SC', sans-serif; }
+  .bundle-item { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 10px 14px; }
   .bundle-item .bi-name { font-size: 13px; font-weight: 700; color: #0f172a; }
   .bundle-item .bi-price { font-size: 11px; color: #64748b; text-decoration: line-through; }
   .original-price { font-size: 13px; color: #94a3b8; text-decoration: line-through; margin-bottom: 2px; }
@@ -237,24 +237,24 @@
   .avatar-admin { background: linear-gradient(135deg, #2563eb, #60a5fa); }
   .avatar-email { background: linear-gradient(135deg, #7c3aed, #a78bfa); }
   .contact-card h3 { font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
-  .contact-card .zh-title { font-family: 'Noto Sans SC', sans-serif; font-size: 13px; color: var(--text-muted); margin-bottom: 1rem; }
+  .contact-card .zh-title { font-size: 13px; color: var(--text-muted); margin-bottom: 1rem; }
   .contact-number { font-size: 17px; font-weight: 700; color: var(--navy); margin-bottom: 1rem; }
-  .contact-desc { font-family: 'Noto Sans SC', sans-serif; font-size: 12px; color: var(--text-muted); margin-bottom: 1.2rem; line-height: 1.6; }
-  .wa-btn-card, .email-btn-card { display: inline-flex; align-items: center; gap: 7px; padding: 9px 20px; border-radius: 30px; font-size: 13px; font-weight: 600; text-decoration: none; font-family: 'Noto Sans SC', sans-serif; }
+  .contact-desc { font-size: 12px; color: var(--text-muted); margin-bottom: 1.2rem; line-height: 1.6; }
+  .wa-btn-card, .email-btn-card { display: inline-flex; align-items: center; gap: 7px; padding: 9px 20px; border-radius: 30px; font-size: 13px; font-weight: 600; text-decoration: none; }
   .wa-btn-card { background: #25d366; color: white; }
   .wa-btn-card:hover { background: #1da851; }
   .email-btn-card { background: var(--surface); color: var(--navy); border: 1px solid var(--border); }
   .email-btn-card:hover { border-color: var(--green); color: var(--green); }
   .contact-divider { background: var(--surface); border-radius: 16px; padding: 2rem 2.5rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
-  .contact-divider-text h3 { font-family: 'Noto Sans SC', sans-serif; font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
-  .contact-divider-text p { font-family: 'Noto Sans SC', sans-serif; font-size: 14px; color: var(--text-muted); }
+  .contact-divider-text h3 { font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+  .contact-divider-text p { font-size: 14px; color: var(--text-muted); }
 
   /* FOOTER */
   footer { background: var(--navy); color: white; padding: 60px 2rem 30px; }
   .footer-inner { max-width: 1200px; margin: 0 auto; }
   .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
   .footer-brand p { font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.7; margin-top: 1rem; margin-bottom: 1.5rem; max-width: 280px; }
-  .footer-brand img { max-width: 200px; height: auto; filter: brightness(0) invert(1); }
+  .footer-brand img { max-width: 240px; height: auto; filter: brightness(0) invert(1); }
   .footer-contact-item { display: flex; align-items: center; gap: 8px; font-size: 13px; color: rgba(255,255,255,0.7); margin-bottom: 8px; text-decoration: none; }
   .footer-contact-item:hover { color: #4ade80; }
   .footer-col h4 { font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.2rem; }
@@ -269,14 +269,17 @@
   .sticky-wa-wrap { position: fixed; bottom: 24px; right: 24px; z-index: 200; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
   .sticky-wa-popup { background: white; border: 1px solid var(--border); border-radius: 16px; padding: 1rem 1.2rem; box-shadow: 0 12px 40px rgba(0,0,0,0.12); display: none; min-width: 240px; }
   .sticky-wa-popup.open { display: block; }
-  .sticky-wa-popup h4 { font-family: 'Noto Sans SC', sans-serif; font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; }
+  .sticky-wa-popup h4 { font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; }
   .wa-popup-item { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); text-decoration: none; }
   .wa-popup-item:last-child { border-bottom: none; }
   .wa-popup-avatar { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; color: white; flex-shrink: 0; }
-  .wa-popup-item-text strong { display: block; font-size: 13px; color: var(--navy); font-family: 'Noto Sans SC', sans-serif; }
+  .wa-popup-item-text strong { display: block; font-size: 13px; color: var(--navy); }
   .wa-popup-item-text span { font-size: 11px; color: var(--text-muted); }
-  .sticky-wa-main { background: #25d366; color: white; border-radius: 50px; padding: 12px 20px; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px; box-shadow: 0 8px 32px rgba(37,211,102,0.4); cursor: pointer; border: none; font-family: 'Noto Sans SC', sans-serif; }
+  .sticky-wa-main { background: #25d366; color: white; border-radius: 50px; padding: 12px 20px; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px; box-shadow: 0 8px 32px rgba(37,211,102,0.4); cursor: pointer; border: none; }
   .sticky-wa-main:hover { transform: translateY(-2px); }
+
+  /* When Chinese is active, use the Chinese font for everything */
+  html[lang="zh-CN"] body { font-family: 'Noto Sans SC', sans-serif; }
 
   /* RESPONSIVE */
   @media (max-width: 900px) {
@@ -299,14 +302,12 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">
-    <img src="Clara%20Excel%20Acadmey%20logo.png" alt="Clara Excel Academy">
-  </a>
+  <a href="#" class="nav-logo"><img src="logo.png" alt="Clara Excel Academy"></a>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#courses">Courses</a></li>
-    <li><a href="#corporate">Corporate</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about" data-t="nav-about">About</a></li>
+    <li><a href="#courses" data-t="nav-courses">Courses</a></li>
+    <li><a href="#corporate" data-t="nav-corporate">Corporate</a></li>
+    <li><a href="#contact" data-t="nav-contact">Contact</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
   <div class="lang-switcher">
@@ -350,26 +351,14 @@
           <div class="trainer-avatar">C</div>
           <div class="trainer-info">
             <h3>Clara Tan Chai Fang</h3>
-            <p>HRDC Accredited Trainer · Excel & AI</p>
+            <p data-t="trainer-role">HRDC Accredited Trainer · Excel & AI</p>
           </div>
           <div class="hrdc-badge-card">HRDC</div>
         </div>
         <div class="course-previews">
-          <div class="course-preview-item">
-            <div class="course-level-dot dot-beginner"></div>
-            <div class="course-preview-info"><h4>Excel Beginner</h4><p>20 Lessons · 10 Hours</p></div>
-            <div class="course-price">RM 199</div>
-          </div>
-          <div class="course-preview-item">
-            <div class="course-level-dot dot-intermediate"></div>
-            <div class="course-preview-info"><h4>Excel Intermediate</h4><p>22 Lessons · 14 Hours</p></div>
-            <div class="course-price">RM 249</div>
-          </div>
-          <div class="course-preview-item">
-            <div class="course-level-dot dot-advanced"></div>
-            <div class="course-preview-info"><h4>Excel Advanced</h4><p>25 Lessons · 18 Hours</p></div>
-            <div class="course-price">RM 299</div>
-          </div>
+          <div class="course-preview-item"><div class="course-level-dot dot-beginner"></div><div class="course-preview-info"><h4 data-t="preview1-name">Excel Beginner</h4><p data-t="preview1-meta">20 Lessons · 10 Hours</p></div><div class="course-price">RM 199</div></div>
+          <div class="course-preview-item"><div class="course-level-dot dot-intermediate"></div><div class="course-preview-info"><h4 data-t="preview2-name">Excel Intermediate</h4><p data-t="preview2-meta">22 Lessons · 14 Hours</p></div><div class="course-price">RM 249</div></div>
+          <div class="course-preview-item"><div class="course-level-dot dot-advanced"></div><div class="course-preview-info"><h4 data-t="preview3-name">Excel Advanced</h4><p data-t="preview3-meta">25 Lessons · 18 Hours</p></div><div class="course-price">RM 299</div></div>
         </div>
       </div>
       <div class="hero-float-badge float-2">
@@ -400,18 +389,16 @@
     <div class="about-grid">
       <div>
         <div class="about-photo-frame">
-          <div class="photo-area">
-            <div class="photo-fallback">CTC<small>Drop clara-photo.jpg into /assets/ to replace</small></div>
-          </div>
+          <div class="photo-area"><div class="photo-fallback">CTC<small data-t="photo-fallback-note">Drop clara-photo.jpg into folder to replace</small></div></div>
           <div class="photo-info">
             <h3>Clara Tan Chai Fang</h3>
-            <p>HRDC Accredited Trainer · Excel &amp; AI Specialist</p>
+            <p data-t="about-role">HRDC Accredited Trainer · Excel &amp; AI Specialist</p>
             <div class="credential-tags">
-              <span class="tag tag-green">HRDC Accredited</span>
-              <span class="tag">Google Data Analytics</span>
-              <span class="tag tag-green">Power BI</span>
-              <span class="tag">Excel Expert</span>
-              <span class="tag">AI Tools</span>
+              <span class="tag tag-green" data-t="tag1">HRDC Accredited</span>
+              <span class="tag" data-t="tag2">Google Data Analytics</span>
+              <span class="tag tag-green" data-t="tag3">Power BI</span>
+              <span class="tag" data-t="tag4">Excel Expert</span>
+              <span class="tag" data-t="tag5">AI Tools</span>
             </div>
           </div>
         </div>
@@ -424,9 +411,9 @@
         <p data-t="about-p3">Whether you're an admin staff member building Excel confidence or a data analyst automating complex reports, Clara's structured, step-by-step approach has helped over 3,000 professionals across 100+ companies upskill effectively.</p>
         <div class="about-highlights">
           <div class="highlight-card"><div class="num">3,000+</div><div class="label" data-t="about-stat1">Trained across Malaysia</div></div>
-          <div class="highlight-card"><div class="num">100+</div><div class="label" data-t="about-stat2">Corporate & SME clients</div></div>
+          <div class="highlight-card"><div class="num">100+</div><div class="label" data-t="about-stat2">Corporate &amp; SME clients</div></div>
           <div class="highlight-card"><div class="num">HRDC</div><div class="label" data-t="about-stat3">Registered trainer</div></div>
-          <div class="highlight-card"><div class="num">3 Levels</div><div class="label" data-t="about-stat4">Beginner to Advanced</div></div>
+          <div class="highlight-card"><div class="num" data-t="about-stat4n">3 Levels</div><div class="label" data-t="about-stat4">Beginner to Advanced</div></div>
         </div>
       </div>
     </div>
@@ -437,19 +424,19 @@
 <section id="courses" style="background:#f0fdf4; padding:80px 2rem;">
   <div class="courses-wrap">
     <div class="courses-header-area">
-      <div class="section-label">📚 Online Courses</div>
-      <div class="section-title" style="text-align:center;">Choose Your Course</div>
-      <p class="section-desc" style="text-align:center;margin:0 auto;">Click each card to expand details</p>
+      <div class="section-label" data-t="courses-label">📚 Online Courses</div>
+      <div class="section-title" style="text-align:center;" data-t="courses-title">Choose Your Course</div>
+      <p class="section-desc" style="text-align:center;margin:0 auto;" data-t="courses-desc">Click each card to expand details</p>
     </div>
 
     <div class="included-banner">
-      <div class="included-banner-title">🎁 Every course includes:</div>
+      <div class="included-banner-title" data-t="inc-title">🎁 Every course includes:</div>
       <div class="included-items">
-        <div class="inc-item">♾️ Lifetime videos</div>
-        <div class="inc-item">📜 HRDC Certificate</div>
-        <div class="inc-item">💬 WhatsApp support</div>
-        <div class="inc-item">📁 Practice files</div>
-        <div class="inc-item">♾️ Lifetime Access</div>
+        <div class="inc-item" data-t="inc1">♾️ Lifetime videos</div>
+        <div class="inc-item" data-t="inc2">📜 HRDC Certificate</div>
+        <div class="inc-item" data-t="inc3">💬 WhatsApp support</div>
+        <div class="inc-item" data-t="inc4">📁 Practice files</div>
+        <div class="inc-item" data-t="inc5">♾️ Lifetime Access</div>
       </div>
     </div>
 
@@ -458,27 +445,22 @@
       <div class="course-row-header" onclick="toggleRow('row1')">
         <div class="cr-left">
           <div class="cr-num">1</div>
-          <div class="cr-name-block"><h3>Beginner Mini <span style="font-size:14px;font-weight:400;opacity:0.85">小白入门</span></h3><div class="cr-sub">Zero-experience starter · Short video format</div></div>
+          <div class="cr-name-block"><h3 data-t="c1-name">Beginner Mini</h3><div class="cr-sub" data-t="c1-sub">Zero-experience starter · Short video format</div></div>
         </div>
         <div class="cr-right"><div class="cr-price"><div class="rm">RM</div><div class="amount">49</div></div><div class="cr-chevron">▼</div></div>
       </div>
       <div class="course-row-body">
         <div class="cr-grid">
-          <div class="cr-feature"><span class="cr-check">✓</span> Excel interface &amp; basic operations</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Data entry &amp; basic formatting</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> SUM / AVERAGE / COUNT</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Basic Filter &amp; Sort</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Build confidence from zero</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Short-video bite-sized lessons</div>
-        </div>
-        <div class="cr-includes">
-          <span class="cr-pill pill-video">📱 Short videos</span>
-          <span class="cr-pill pill-access">♾️ Lifetime access</span>
-          <span class="cr-pill pill-kit">📘 Resource pack</span>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c1-f1">Excel interface &amp; basic operations</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c1-f2">Data entry &amp; basic formatting</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c1-f3">SUM / AVERAGE / COUNT</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c1-f4">Basic Filter &amp; Sort</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c1-f5">Build confidence from zero</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c1-f6">Bite-sized short videos</span></div>
         </div>
         <div class="cr-enroll-row">
-          <div class="cr-hrdc">✦ For complete beginners</div>
-          <a href="https://wa.me/601113003886?text=Hi%20Clara%2C%20I%27d%20like%20to%20enrol%20in%20the%20RM49%20Beginner%20Mini%20course." class="cr-enroll-btn">💬 Enroll RM49</a>
+          <div class="cr-hrdc" data-t="c1-meta">✦ For complete beginners</div>
+          <a href="https://wa.me/601113003886" class="cr-enroll-btn" data-t="c1-btn">💬 Enroll RM49</a>
         </div>
       </div>
     </div>
@@ -488,31 +470,24 @@
       <div class="course-row-header" onclick="toggleRow('row2')">
         <div class="cr-left">
           <div class="cr-num">2</div>
-          <div class="cr-name-block"><h3>Excel Beginner <span class="hot-badge">🔥 Popular</span></h3><div class="cr-sub">Complete foundational course · Detailed video lessons</div></div>
+          <div class="cr-name-block"><h3><span data-t="c2-name">Excel Beginner</span> <span class="hot-badge" data-t="hot">🔥 Popular</span></h3><div class="cr-sub" data-t="c2-sub">Complete foundational course · Detailed video lessons</div></div>
         </div>
         <div class="cr-right"><div class="cr-price"><div class="rm">RM</div><div class="amount">199</div></div><div class="cr-chevron">▼</div></div>
       </div>
       <div class="course-row-body">
         <div class="cr-grid">
-          <div class="cr-feature"><span class="cr-check">✓</span> Excel interface &amp; shortcuts</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> IF / SUMIF / COUNTIF</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> VLOOKUP &amp; lookup functions</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Conditional Formatting</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Data Validation &amp; Filter</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Real workplace exercises</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Excel Tables &amp; Charts</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Export to PDF &amp; print setup</div>
-        </div>
-        <div class="cr-includes">
-          <span class="cr-pill pill-video">🎬 Detailed videos</span>
-          <span class="cr-pill pill-cert">📜 Certificate</span>
-          <span class="cr-pill pill-wa">💬 WA Support</span>
-          <span class="cr-pill pill-access">♾️ Lifetime access</span>
-          <span class="cr-pill pill-kit">📁 Practice files</span>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c2-f1">Excel interface &amp; shortcuts</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c2-f2">IF / SUMIF / COUNTIF</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c2-f3">VLOOKUP &amp; lookup functions</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c2-f4">Conditional Formatting</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c2-f5">Data Validation &amp; Filter</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c2-f6">Real workplace exercises</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c2-f7">Excel Tables &amp; Charts</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c2-f8">Export to PDF &amp; print setup</span></div>
         </div>
         <div class="cr-enroll-row">
-          <div class="cr-hrdc">✓ HRDC Claimable · 20 Lessons · 10 Hours</div>
-          <a href="https://wa.me/601113003886?text=Hi%20Clara%2C%20I%27d%20like%20to%20enrol%20in%20the%20Excel%20Beginner%20course." class="cr-enroll-btn">💬 Enroll RM199</a>
+          <div class="cr-hrdc" data-t="c2-meta">✓ HRDC Claimable · 20 Lessons · 10 Hours</div>
+          <a href="https://wa.me/601113003886" class="cr-enroll-btn" data-t="c2-btn">💬 Enroll RM199</a>
         </div>
       </div>
     </div>
@@ -522,31 +497,24 @@
       <div class="course-row-header" onclick="toggleRow('row3')">
         <div class="cr-left">
           <div class="cr-num">3</div>
-          <div class="cr-name-block"><h3>Excel Intermediate</h3><div class="cr-sub">Data analysis · XLOOKUP · PivotTable</div></div>
+          <div class="cr-name-block"><h3 data-t="c3-name">Excel Intermediate</h3><div class="cr-sub" data-t="c3-sub">Data analysis · XLOOKUP · PivotTable</div></div>
         </div>
         <div class="cr-right"><div class="cr-price"><div class="rm">RM</div><div class="amount">249</div></div><div class="cr-chevron">▼</div></div>
       </div>
       <div class="course-row-body">
         <div class="cr-grid">
-          <div class="cr-feature"><span class="cr-check">✓</span> XLOOKUP &amp; INDEX MATCH</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> PivotTable analysis 🔥</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Power Query basics</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Data cleaning &amp; transformation</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Dashboard intro</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> What-If Analysis</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> SUMIFS / COUNTIFS</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Dynamic charts &amp; Slicers</div>
-        </div>
-        <div class="cr-includes">
-          <span class="cr-pill pill-video">🎬 Detailed videos</span>
-          <span class="cr-pill pill-cert">📜 Certificate</span>
-          <span class="cr-pill pill-wa">💬 WA Support</span>
-          <span class="cr-pill pill-access">♾️ Lifetime access</span>
-          <span class="cr-pill pill-kit">📁 Practice files</span>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c3-f1">XLOOKUP &amp; INDEX MATCH</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c3-f2">PivotTable analysis 🔥</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c3-f3">Power Query basics</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c3-f4">Data cleaning &amp; transformation</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c3-f5">Dashboard intro</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c3-f6">What-If Analysis</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c3-f7">SUMIFS / COUNTIFS</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c3-f8">Dynamic charts &amp; Slicers</span></div>
         </div>
         <div class="cr-enroll-row">
-          <div class="cr-hrdc">✓ HRDC Claimable · 22 Lessons · 14 Hours</div>
-          <a href="https://wa.me/601113003886?text=Hi%20Clara%2C%20I%27d%20like%20to%20enrol%20in%20the%20Excel%20Intermediate%20course." class="cr-enroll-btn">💬 Enroll RM249</a>
+          <div class="cr-hrdc" data-t="c3-meta">✓ HRDC Claimable · 22 Lessons · 14 Hours</div>
+          <a href="https://wa.me/601113003886" class="cr-enroll-btn" data-t="c3-btn">💬 Enroll RM249</a>
         </div>
       </div>
     </div>
@@ -556,31 +524,24 @@
       <div class="course-row-header" onclick="toggleRow('row4')">
         <div class="cr-left">
           <div class="cr-num">4</div>
-          <div class="cr-name-block"><h3>Excel Advanced <span style="font-size:13px;font-weight:400;opacity:0.85">+ AI Automation</span></h3><div class="cr-sub">Power Query · VBA · Power Pivot · AI tools</div></div>
+          <div class="cr-name-block"><h3><span data-t="c4-name">Excel Advanced</span> <span style="font-size:13px;font-weight:400;opacity:0.85;" data-t="c4-name-sub">+ AI Automation</span></h3><div class="cr-sub" data-t="c4-sub">Power Query · VBA · Power Pivot · AI tools</div></div>
         </div>
         <div class="cr-right"><div class="cr-price"><div class="rm">RM</div><div class="amount">299</div></div><div class="cr-chevron">▼</div></div>
       </div>
       <div class="course-row-body">
         <div class="cr-grid">
-          <div class="cr-feature"><span class="cr-check">✓</span> Power Query advanced automation</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> VBA macros writing &amp; recording</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Interactive dashboards</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> AI-generated formulas &amp; code</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Power Pivot &amp; DAX</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Copilot / Claude / ChatGPT</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Dynamic charts &amp; timeline Slicer</div>
-          <div class="cr-feature"><span class="cr-check">✓</span> Capstone: automated reporting</div>
-        </div>
-        <div class="cr-includes">
-          <span class="cr-pill pill-video">🎬 Detailed videos</span>
-          <span class="cr-pill pill-cert">📜 Certificate</span>
-          <span class="cr-pill pill-wa">💬 WA Support</span>
-          <span class="cr-pill pill-access">♾️ Lifetime access</span>
-          <span class="cr-pill pill-kit">📁 Practice files</span>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c4-f1">Power Query advanced automation</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c4-f2">VBA macros writing &amp; recording</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c4-f3">Interactive dashboards</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c4-f4">AI-generated formulas &amp; code</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c4-f5">Power Pivot &amp; DAX</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c4-f6">Copilot / Claude / ChatGPT</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c4-f7">Dynamic charts &amp; timeline Slicer</span></div>
+          <div class="cr-feature"><span class="cr-check">✓</span><span data-t="c4-f8">Capstone: automated reporting</span></div>
         </div>
         <div class="cr-enroll-row">
-          <div class="cr-hrdc">✓ HRDC Claimable · 25 Lessons · 18 Hours</div>
-          <a href="https://wa.me/601113003886?text=Hi%20Clara%2C%20I%27d%20like%20to%20enrol%20in%20the%20Excel%20Advanced%20course." class="cr-enroll-btn">💬 Enroll RM299</a>
+          <div class="cr-hrdc" data-t="c4-meta">✓ HRDC Claimable · 25 Lessons · 18 Hours</div>
+          <a href="https://wa.me/601113003886" class="cr-enroll-btn" data-t="c4-btn">💬 Enroll RM299</a>
         </div>
       </div>
     </div>
@@ -590,38 +551,27 @@
       <div class="course-row-header" onclick="toggleRow('row5')">
         <div class="cr-left">
           <div class="cr-num" style="background:rgba(251,191,36,0.3);">⭐</div>
-          <div class="cr-name-block"><h3>Complete Bundle <span class="best-badge">BEST VALUE</span></h3><div class="cr-sub">Mini + Beginner + Intermediate + Advanced + 50 Templates</div></div>
+          <div class="cr-name-block"><h3><span data-t="c5-name">Complete Bundle</span> <span class="best-badge" data-t="best">BEST VALUE</span></h3><div class="cr-sub" data-t="c5-sub">Mini + Beginner + Intermediate + Advanced + 50 Templates</div></div>
         </div>
         <div class="cr-right">
           <div class="cr-price">
             <div class="original-price" style="color:rgba(255,255,255,0.45);">RM 796</div>
-            <div style="display:flex;align-items:baseline;gap:2px;justify-content:flex-end;">
-              <div class="rm" style="color:#fbbf24;">RM</div>
-              <div class="amount" style="color:#fbbf24;">499</div>
-            </div>
+            <div style="display:flex;align-items:baseline;gap:2px;justify-content:flex-end;"><div class="rm" style="color:#fbbf24;">RM</div><div class="amount" style="color:#fbbf24;">499</div></div>
           </div>
           <div class="cr-chevron">▼</div>
         </div>
       </div>
       <div class="course-row-body">
-        <div class="bundle-savings">🎉 <strong>Save RM297!</strong> 37% cheaper than buying individually. The complete Excel learning path from zero to advanced.</div>
+        <div class="bundle-savings"><span data-t="c5-save">🎉 <strong>Save RM297!</strong> 37% cheaper than buying individually. The complete Excel learning path from zero to advanced.</span></div>
         <div class="bundle-includes">
-          <div class="bundle-item"><div class="bi-name">① Beginner Mini</div><div class="bi-price">RM49</div></div>
-          <div class="bundle-item"><div class="bi-name">② Excel Beginner</div><div class="bi-price">RM199</div></div>
-          <div class="bundle-item"><div class="bi-name">③ Excel Intermediate</div><div class="bi-price">RM249</div></div>
-          <div class="bundle-item"><div class="bi-name">④ Excel Advanced + AI</div><div class="bi-price">RM299</div></div>
-        </div>
-        <div class="cr-includes">
-          <span class="cr-pill pill-video">🎬 All videos</span>
-          <span class="cr-pill pill-cert">📜 3 Certificates</span>
-          <span class="cr-pill pill-wa">💬 WA Support</span>
-          <span class="cr-pill pill-access">♾️ Lifetime access</span>
-          <span class="cr-pill pill-kit">📁 Practice files</span>
-          <span class="cr-pill pill-tpl">🗂️ 50+ Templates</span>
+          <div class="bundle-item"><div class="bi-name" data-t="c5-b1n">① Beginner Mini</div><div class="bi-price">RM49</div></div>
+          <div class="bundle-item"><div class="bi-name" data-t="c5-b2n">② Excel Beginner</div><div class="bi-price">RM199</div></div>
+          <div class="bundle-item"><div class="bi-name" data-t="c5-b3n">③ Excel Intermediate</div><div class="bi-price">RM249</div></div>
+          <div class="bundle-item"><div class="bi-name" data-t="c5-b4n">④ Excel Advanced + AI</div><div class="bi-price">RM299</div></div>
         </div>
         <div class="cr-enroll-row">
-          <div class="cr-hrdc"><strong>✓ HRDC Claimable</strong> · Save RM297 · Full learning path</div>
-          <a href="https://wa.me/601113003886?text=Hi%20Clara%2C%20I%27d%20like%20the%20Complete%20Bundle%20at%20RM499." class="cr-enroll-btn" style="background:linear-gradient(135deg,#fbbf24,#f59e0b);color:#1a1a1a;font-weight:800;">⭐ Get Bundle RM499</a>
+          <div class="cr-hrdc" data-t="c5-meta"><strong>✓ HRDC Claimable</strong> · Save RM297 · Full learning path</div>
+          <a href="https://wa.me/601113003886" class="cr-enroll-btn" style="background:linear-gradient(135deg,#fbbf24,#f59e0b);color:#1a1a1a;font-weight:800;" data-t="c5-btn">⭐ Get Bundle RM499</a>
         </div>
       </div>
     </div>
@@ -638,7 +588,7 @@
       <div class="feature-card"><div class="feature-icon">🇲🇾</div><h4 data-t="feat1-title">Malaysian Context</h4><p data-t="feat1-desc">RM currency, local names, Malaysian business scenarios, multilingual support.</p></div>
       <div class="feature-card"><div class="feature-icon">🤖</div><h4 data-t="feat2-title">AI-Integrated</h4><p data-t="feat2-desc">Advanced modules cover Copilot, Claude, and ChatGPT for Excel automation.</p></div>
       <div class="feature-card"><div class="feature-icon">💰</div><h4 data-t="feat3-title">HRDC Claimable</h4><p data-t="feat3-desc">All courses are HRD Corp claimable for eligible Malaysian employers.</p></div>
-      <div class="feature-card"><div class="feature-icon">🎓</div><h4 data-t="feat4-title">Accredited Trainer</h4><p data-t="feat4-desc">Google Data Analytics & HRDC accredited with proven track record.</p></div>
+      <div class="feature-card"><div class="feature-icon">🎓</div><h4 data-t="feat4-title">Accredited Trainer</h4><p data-t="feat4-desc">Google Data Analytics &amp; HRDC accredited with proven track record.</p></div>
       <div class="feature-card"><div class="feature-icon">♾️</div><h4 data-t="feat5-title">Lifetime Access</h4><p data-t="feat5-desc">Revisit any lesson, any time. No expiry — learn on your own schedule.</p></div>
       <div class="feature-card"><div class="feature-icon">📜</div><h4 data-t="feat6-title">Certificate</h4><p data-t="feat6-desc">Professional certificate of completion for LinkedIn or employer.</p></div>
       <div class="feature-card"><div class="feature-icon">🏢</div><h4 data-t="feat7-title">Corporate Training</h4><p data-t="feat7-desc">Custom in-house programmes with tailored content and flexible scheduling.</p></div>
@@ -655,16 +605,16 @@
         <h2 data-t="corp-title">Corporate &amp; Group Training</h2>
         <p data-t="corp-desc">Upskill your entire team with customised Excel, Power BI, and AI productivity training. HRDC claimable, flexible scheduling, content tailored to your industry.</p>
         <div class="corporate-tags">
-          <span class="corp-tag">✓ HRDC Claimable</span>
-          <span class="corp-tag">✓ Onsite or Online</span>
-          <span class="corp-tag">✓ Custom Content</span>
-          <span class="corp-tag">✓ Excel · Power BI · AI</span>
-          <span class="corp-tag">✓ Certificate</span>
+          <span class="corp-tag" data-t="corp-tag1">✓ HRDC Claimable</span>
+          <span class="corp-tag" data-t="corp-tag2">✓ Onsite or Online</span>
+          <span class="corp-tag" data-t="corp-tag3">✓ Custom Content</span>
+          <span class="corp-tag" data-t="corp-tag4">✓ Excel · Power BI · AI</span>
+          <span class="corp-tag" data-t="corp-tag5">✓ Certificate</span>
         </div>
       </div>
       <div class="corporate-actions">
-        <a href="https://wa.me/601113003886?text=Hi%20Clara%2C%20I%27d%20like%20to%20enquire%20about%20corporate%20training." class="btn-white">📞 Enquire Now</a>
-        <a href="https://wa.me/601113003886" class="btn-outline-white">💬 WhatsApp</a>
+        <a href="https://wa.me/601113003886" class="btn-white" data-t="corp-btn1">📞 Enquire Now</a>
+        <a href="https://wa.me/601113003886" class="btn-outline-white" data-t="corp-btn2">💬 WhatsApp</a>
       </div>
     </div>
   </div>
@@ -679,18 +629,18 @@
     <div class="testimonials-grid">
       <div class="testimonial-card">
         <div class="stars">★★★★★</div>
-        <p class="testimonial-text">"Clara's teaching is clear and practical. The Malaysian business examples made it easy to apply to my actual work. I use PivotTables daily now."</p>
-        <div class="testimonial-author"><div class="author-avatar">AR</div><div><div class="author-name">Ahmad Razif</div><div class="author-role">Finance Executive, KL</div></div></div>
+        <p class="testimonial-text" data-t="testi1-text">"Clara's teaching is clear and practical. The Malaysian business examples made it easy to apply to my actual work. I use PivotTables daily now."</p>
+        <div class="testimonial-author"><div class="author-avatar">AR</div><div><div class="author-name">Ahmad Razif</div><div class="author-role" data-t="testi1-role">Finance Executive, KL</div></div></div>
       </div>
       <div class="testimonial-card">
         <div class="stars">★★★★★</div>
-        <p class="testimonial-text">"The Advanced course was a game changer. Learning Power Query and VBA with AI assistance opened up automation possibilities I never imagined."</p>
-        <div class="testimonial-author"><div class="author-avatar">SL</div><div><div class="author-name">Siti Liyana</div><div class="author-role">Data Analyst, PJ</div></div></div>
+        <p class="testimonial-text" data-t="testi2-text">"The Advanced course was a game changer. Learning Power Query and VBA with AI assistance opened up automation possibilities I never imagined."</p>
+        <div class="testimonial-author"><div class="author-avatar">SL</div><div><div class="author-name">Siti Liyana</div><div class="author-role" data-t="testi2-role">Data Analyst, PJ</div></div></div>
       </div>
       <div class="testimonial-card">
         <div class="stars">★★★★★</div>
-        <p class="testimonial-text">"Our team of 12 completed the Intermediate course, all HRDC-claimable. Clara's structured modules and lifetime access made it so convenient."</p>
-        <div class="testimonial-author"><div class="author-avatar">NH</div><div><div class="author-name">Nurul Hana</div><div class="author-role">HR Manager, Shah Alam</div></div></div>
+        <p class="testimonial-text" data-t="testi3-text">"Our team of 12 completed the Intermediate course, all HRDC-claimable. Clara's structured modules and lifetime access made it so convenient."</p>
+        <div class="testimonial-author"><div class="author-avatar">NH</div><div><div class="author-name">Nurul Hana</div><div class="author-role" data-t="testi3-role">HR Manager, Shah Alam</div></div></div>
       </div>
     </div>
   </div>
@@ -700,16 +650,16 @@
 <section id="faq">
   <div class="section-inner" style="max-width: 800px;">
     <div class="section-label">FAQ</div>
-    <div class="section-title">Frequently Asked Questions</div>
-    <p class="section-desc">Everything you need to know before enrolling.</p>
+    <div class="section-title" data-t="faq-title">Frequently Asked Questions</div>
+    <p class="section-desc" data-t="faq-desc">Everything you need to know before enrolling.</p>
     <div class="faq-list">
-      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Are these courses HRDC / HRD Corp claimable?</span><span class="faq-chevron">▼</span></div><div class="faq-answer">Yes — all courses are claimable under HRD Corp for eligible Malaysian employers. Clara is a registered HRD Corp trainer. WhatsApp us for the course code and claiming procedures.</div></div>
-      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>What version of Microsoft Excel do I need?</span><span class="faq-chevron">▼</span></div><div class="faq-answer">Courses work with Excel 2019, 2021, and Microsoft 365. Some Advanced features (XLOOKUP, FILTER) require Excel 365 or 2021.</div></div>
-      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Do I need prior Excel knowledge for Beginner?</span><span class="faq-chevron">▼</span></div><div class="faq-answer">No prerequisites at all. The Beginner course starts from scratch — Ribbon, navigation, and data entry.</div></div>
-      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>How long do I have access?</span><span class="faq-chevron">▼</span></div><div class="faq-answer">Lifetime access. Revisit any lesson at any time — no expiry date.</div></div>
-      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Is there a certificate?</span><span class="faq-chevron">▼</span></div><div class="faq-answer">Yes. A digital certificate of completion (Sijil Tamat Kursus) shareable on LinkedIn.</div></div>
-      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Can I enrol my whole team or company?</span><span class="faq-chevron">▼</span></div><div class="faq-answer">Yes. Group enrolments and customised in-house training available. WhatsApp +60 111 300 3886 for corporate proposals.</div></div>
-      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>What payment methods are accepted?</span><span class="faq-chevron">▼</span></div><div class="faq-answer">Bank transfer (FPX), credit/debit card, and e-wallet. For corporate bookings and HRDC claims, contact us for invoicing.</div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-t="faq1-q">Are these courses HRDC / HRD Corp claimable?</span><span class="faq-chevron">▼</span></div><div class="faq-answer" data-t="faq1-a">Yes — all courses are claimable under HRD Corp for eligible Malaysian employers. Clara is a registered HRD Corp trainer. WhatsApp us for the course code and claiming procedures.</div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-t="faq2-q">What version of Microsoft Excel do I need?</span><span class="faq-chevron">▼</span></div><div class="faq-answer" data-t="faq2-a">Courses work with Excel 2019, 2021, and Microsoft 365. Some Advanced features (XLOOKUP, FILTER) require Excel 365 or 2021.</div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-t="faq3-q">Do I need prior Excel knowledge for Beginner?</span><span class="faq-chevron">▼</span></div><div class="faq-answer" data-t="faq3-a">No prerequisites at all. The Beginner course starts from scratch — Ribbon, navigation, and data entry.</div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-t="faq4-q">How long do I have access?</span><span class="faq-chevron">▼</span></div><div class="faq-answer" data-t="faq4-a">Lifetime access. Revisit any lesson at any time — no expiry date.</div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-t="faq5-q">Is there a certificate?</span><span class="faq-chevron">▼</span></div><div class="faq-answer" data-t="faq5-a">Yes. A digital certificate of completion shareable on LinkedIn.</div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-t="faq6-q">Can I enrol my whole team or company?</span><span class="faq-chevron">▼</span></div><div class="faq-answer" data-t="faq6-a">Yes. Group enrolments and customised in-house training available. WhatsApp +60 111 300 3886 for corporate proposals.</div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-t="faq7-q">What payment methods are accepted?</span><span class="faq-chevron">▼</span></div><div class="faq-answer" data-t="faq7-a">Bank transfer (FPX), credit/debit card, and e-wallet. For corporate bookings and HRDC claims, contact us for invoicing.</div></div>
     </div>
   </div>
 </section>
@@ -718,42 +668,42 @@
 <section style="background: white;" id="contact">
   <div class="section-inner">
     <div class="section-label" data-t="contact-label">Contact Us</div>
-    <div class="section-title">Get in Touch</div>
-    <p class="section-desc">Whether it's a course enquiry, corporate training, or HRDC claim — our team is ready to help.</p>
+    <div class="section-title" data-t="contact-title">Get in Touch</div>
+    <p class="section-desc" data-t="contact-desc">Whether it's a course enquiry, corporate training, or HRDC claim — our team is ready to help.</p>
     <div class="contact-cards">
       <div class="contact-card">
         <div class="contact-avatar avatar-clara">C</div>
         <h3>Clara Tan Chai Fang</h3>
-        <div class="zh-title">Trainer · Course enquiries · HRDC</div>
+        <div class="zh-title" data-t="cc1-role">Trainer · Course enquiries · HRDC</div>
         <div class="contact-number">+60 111-300 3886</div>
-        <div class="contact-desc">Course content · Enrolment<br>HRDC claims · Training schedule</div>
-        <a href="https://wa.me/601113003886?text=Hi%20Clara%2C%20I%27d%20like%20to%20enquire%20about%20your%20Excel%20courses." class="wa-btn-card">💬 WhatsApp Clara</a>
+        <div class="contact-desc" data-t="cc1-desc">Course content · Enrolment<br>HRDC claims · Training schedule</div>
+        <a href="https://wa.me/601113003886" class="wa-btn-card" data-t="cc1-btn">💬 WhatsApp Clara</a>
       </div>
       <div class="contact-card">
         <div class="contact-avatar avatar-admin">A</div>
-        <h3>Admin Team</h3>
-        <div class="zh-title">Payments · Enrolment · Corporate</div>
+        <h3 data-t="cc2-name">Admin Team</h3>
+        <div class="zh-title" data-t="cc2-role">Payments · Enrolment · Corporate</div>
         <div class="contact-number">+60 11-6189 8230</div>
-        <div class="contact-desc">Payment confirmation · Invoice<br>Corporate bookings · Scheduling</div>
-        <a href="https://wa.me/601161898230?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20enrolment." class="wa-btn-card">💬 WhatsApp Admin</a>
+        <div class="contact-desc" data-t="cc2-desc">Payment confirmation · Invoice<br>Corporate bookings · Scheduling</div>
+        <a href="https://wa.me/601161898230" class="wa-btn-card" data-t="cc2-btn">💬 WhatsApp Admin</a>
       </div>
       <div class="contact-card">
         <div class="contact-avatar avatar-email">✉</div>
-        <h3>Email</h3>
-        <div class="zh-title">Formal enquiries · Quotations</div>
+        <h3 data-t="cc3-name">Email</h3>
+        <div class="zh-title" data-t="cc3-role">Formal enquiries · Quotations</div>
         <div class="contact-number" style="font-size:14px;">clara@claraexcel.com</div>
-        <div class="contact-desc">Formal quotations · HRDC docs<br>Partnerships · Corporate contracts</div>
-        <a href="mailto:clara@claraexcel.com?subject=Clara%20Excel%20Academy%20-%20Course%20Enquiry" class="email-btn-card">✉️ Send Email</a>
+        <div class="contact-desc" data-t="cc3-desc">Formal quotations · HRDC docs<br>Partnerships · Corporate contracts</div>
+        <a href="mailto:clara@claraexcel.com" class="email-btn-card" data-t="cc3-btn">✉️ Send Email</a>
       </div>
     </div>
     <div class="contact-divider">
       <div class="contact-divider-text">
-        <h3>⏰ Operating Hours</h3>
-        <p>Mon–Fri: 9:00 AM – 6:00 PM &nbsp;|&nbsp; Sat: 9:00 AM – 1:00 PM &nbsp;|&nbsp; Sun & PH: Closed</p>
+        <h3 data-t="hours-title">⏰ Operating Hours</h3>
+        <p data-t="hours-desc">Mon–Fri: 9:00 AM – 6:00 PM &nbsp;|&nbsp; Sat: 9:00 AM – 1:00 PM &nbsp;|&nbsp; Sun &amp; PH: Closed</p>
       </div>
       <div class="contact-divider-actions">
-        <a href="https://wa.me/601113003886" class="wa-btn-card">💬 Clara</a>
-        <a href="https://wa.me/601161898230" class="wa-btn-card" style="background:#2563eb;">💬 Admin</a>
+        <a href="https://wa.me/601113003886" class="wa-btn-card" data-t="hours-btn1">💬 Clara</a>
+        <a href="https://wa.me/601161898230" class="wa-btn-card" style="background:#2563eb;" data-t="hours-btn2">💬 Admin</a>
       </div>
     </div>
   </div>
@@ -762,12 +712,12 @@
 <!-- CTA -->
 <div class="cta-section">
   <div class="cta-inner">
-    <h2>Start Your Excel Journey Today</h2>
-    <p>Join over 3,000 Malaysian professionals who have transformed their careers with Clara Excel Academy.<br><em>HRDC Claimable · Lifetime Access · Certificate Included</em></p>
+    <h2 data-t="cta-title">Start Your Excel Journey Today</h2>
+    <p data-t="cta-desc">Join over 3,000 Malaysian professionals who have transformed their careers with Clara Excel Academy.<br><em>HRDC Claimable · Lifetime Access · Certificate Included</em></p>
     <div class="cta-actions">
-      <a href="https://wa.me/601113003886?text=Hi%20Clara%2C%20I%27d%20like%20to%20enrol%20in%20an%20Excel%20course." class="whatsapp-btn">💬 WhatsApp Clara</a>
-      <a href="https://wa.me/601161898230?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20enrolment." class="whatsapp-btn" style="background:#2563eb;">💬 WhatsApp Admin</a>
-      <a href="#courses" class="btn-secondary">View Courses</a>
+      <a href="https://wa.me/601113003886" class="whatsapp-btn" data-t="cta-btn1">💬 WhatsApp Clara</a>
+      <a href="https://wa.me/601161898230" class="whatsapp-btn" style="background:#2563eb;" data-t="cta-btn2">💬 WhatsApp Admin</a>
+      <a href="#courses" class="btn-secondary" data-t="cta-btn3">View Courses</a>
     </div>
   </div>
 </div>
@@ -777,37 +727,37 @@
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="Clara%20Excel%20Acadmey%20logo.png" alt="Clara Excel Academy">
-        <p>Malaysia's HRDC-accredited Excel &amp; AI training academy. Helping professionals master practical data skills.</p>
+        <img src="logo.png" alt="Clara Excel Academy">
+        <p data-t="footer-tagline">Malaysia's HRDC-accredited Excel &amp; AI training academy. Helping professionals master practical data skills.</p>
         <a href="https://wa.me/601113003886" class="footer-contact-item">📱 Clara: +60 111-300 3886</a>
         <a href="https://wa.me/601161898230" class="footer-contact-item">📱 Admin: +60 11-6189 8230</a>
         <a href="mailto:clara@claraexcel.com" class="footer-contact-item">✉️ clara@claraexcel.com</a>
       </div>
       <div class="footer-col">
-        <h4>Courses</h4>
+        <h4 data-t="footer-col1">Courses</h4>
         <ul>
-          <li><a href="#courses">Beginner Mini — RM 49</a></li>
-          <li><a href="#courses">Excel Beginner — RM 199</a></li>
-          <li><a href="#courses">Excel Intermediate — RM 249</a></li>
-          <li><a href="#courses">Excel Advanced — RM 299</a></li>
-          <li><a href="#corporate">Corporate Training</a></li>
+          <li><a href="#courses" data-t="footer-c1">Beginner Mini — RM 49</a></li>
+          <li><a href="#courses" data-t="footer-c2">Excel Beginner — RM 199</a></li>
+          <li><a href="#courses" data-t="footer-c3">Excel Intermediate — RM 249</a></li>
+          <li><a href="#courses" data-t="footer-c4">Excel Advanced — RM 299</a></li>
+          <li><a href="#corporate" data-t="footer-c5">Corporate Training</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Company</h4>
+        <h4 data-t="footer-col2">Company</h4>
         <ul>
-          <li><a href="#about">About Clara</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="https://sites.google.com/view/portfoliotanchaifang/home">Portfolio</a></li>
+          <li><a href="#about" data-t="footer-co1">About Clara</a></li>
+          <li><a href="#faq" data-t="footer-co2">FAQ</a></li>
+          <li><a href="#contact" data-t="footer-co3">Contact</a></li>
+          <li><a href="https://sites.google.com/view/portfoliotanchaifang/home" data-t="footer-co4">Portfolio</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Contact</h4>
+        <h4 data-t="footer-col3">Contact</h4>
         <ul>
-          <li><a href="https://wa.me/601113003886">💬 WhatsApp Clara</a></li>
-          <li><a href="https://wa.me/601161898230">💬 WhatsApp Admin</a></li>
-          <li><a href="mailto:clara@claraexcel.com">✉️ Email</a></li>
+          <li><a href="https://wa.me/601113003886" data-t="footer-ct1">💬 WhatsApp Clara</a></li>
+          <li><a href="https://wa.me/601161898230" data-t="footer-ct2">💬 WhatsApp Admin</a></li>
+          <li><a href="mailto:clara@claraexcel.com" data-t="footer-ct3">✉️ Email</a></li>
         </ul>
       </div>
     </div>
@@ -821,20 +771,21 @@
 <!-- STICKY WHATSAPP -->
 <div class="sticky-wa-wrap">
   <div class="sticky-wa-popup" id="waPopup">
-    <h4>💬 Choose Contact</h4>
+    <h4 data-t="wa-popup-title">💬 Choose Contact</h4>
     <a href="https://wa.me/601113003886" class="wa-popup-item">
       <div class="wa-popup-avatar" style="background:linear-gradient(135deg,#16a34a,#22c55e);">C</div>
-      <div class="wa-popup-item-text"><strong>Clara — Course enquiries</strong><span>+60 111-300 3886</span></div>
+      <div class="wa-popup-item-text"><strong data-t="wa-pop1-name">Clara — Course enquiries</strong><span>+60 111-300 3886</span></div>
     </a>
     <a href="https://wa.me/601161898230" class="wa-popup-item">
       <div class="wa-popup-avatar" style="background:linear-gradient(135deg,#2563eb,#60a5fa);">A</div>
-      <div class="wa-popup-item-text"><strong>Admin — Payment &amp; enrolment</strong><span>+60 11-6189 8230</span></div>
+      <div class="wa-popup-item-text"><strong data-t="wa-pop2-name">Admin — Payment &amp; enrolment</strong><span>+60 11-6189 8230</span></div>
     </a>
   </div>
-  <button class="sticky-wa-main" onclick="document.getElementById('waPopup').classList.toggle('open')">💬 WhatsApp Us</button>
+  <button class="sticky-wa-main" onclick="document.getElementById('waPopup').classList.toggle('open')" data-t="wa-main">💬 WhatsApp Us</button>
 </div>
 
 <script>
+  /* COURSE/FAQ TOGGLES */
   function toggleRow(id) { document.getElementById(id).classList.toggle('open'); }
   function toggleFaq(el) {
     const item = el.parentElement;
@@ -842,15 +793,266 @@
     document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
     if (!isOpen) item.classList.add('open');
   }
+
+  /* TRANSLATIONS — English is the source-of-truth (default in HTML). zh + ms override. */
+  const T = {
+    en: {}, /* English is whatever's already in the HTML — no overrides needed */
+    zh: {
+      'nav-about': '关于', 'nav-courses': '课程', 'nav-corporate': '企业培训', 'nav-contact': '联系', 'nav-cta': '立即报名',
+      'hero-badge': 'HRDC 认可培训师 · 马来西亚',
+      'hero-h1a': '掌握 Excel。', 'hero-h1b': '职场蜕变。',
+      'hero-desc': 'Clara Tan Chai Fang 专业 Excel 与 AI 培训 — 从初级到高级，HRDC 可申请，专为马来西亚职场人士设计的线上课程。',
+      'hero-btn1': '查看全部课程 →', 'hero-btn2': '📱 WhatsApp 咨询',
+      'stat1': '学员人数', 'stat2': '合作企业', 'stat3': '认可培训师',
+      'float1-title': 'HRDC 可申请', 'float1-sub': '政府津贴培训',
+      'float2-title': '终身访问', 'float2-sub': '随时随地学习',
+      'trainer-role': 'HRDC 认可培训师 · Excel & AI',
+      'preview1-name': 'Excel 初级', 'preview1-meta': '20 课 · 10 小时',
+      'preview2-name': 'Excel 中级', 'preview2-meta': '22 课 · 14 小时',
+      'preview3-name': 'Excel 高级', 'preview3-meta': '25 课 · 18 小时',
+      'trust1-title': 'HRDC 认可', 'trust1-sub': 'HRD Corp 注册培训师',
+      'trust2-title': '自主学习', 'trust2-sub': '随时随地，按自己步伐',
+      'trust3-title': '终身访问', 'trust3-sub': '永久回看，无期限',
+      'trust4-title': '颁发证书', 'trust4-sub': '完成课程获得认证',
+      'trust5-title': '100+ 企业', 'trust5-sub': '丰富企业培训经验',
+      'about-label': '关于培训师', 'about-h2': '实战培训，立竿见影',
+      'about-role': 'HRDC 认可培训师 · Excel & AI 专家',
+      'tag1': 'HRDC 认可', 'tag2': 'Google 数据分析', 'tag3': 'Power BI', 'tag4': 'Excel 专家', 'tag5': 'AI 工具',
+      'about-p1': 'Clara Tan Chai Fang 是 HRDC 认可培训师，专注于 Microsoft Excel、Power BI 及 AI 生产力工具。凭借数据分析背景与多年企业培训经验，Clara 的每一堂课都带来实用、职场适用的技能。',
+      'about-p2': '持有 Google 数据分析与 Google Cloud 数据分析专业证书，Clara 的课程以马来西亚真实商业场景为基础——包括 RM 货币格式、本地薪资案例及双语内容。',
+      'about-p3': '无论您是想建立 Excel 信心的行政人员，还是希望自动化报表的数据分析师，Clara 的系统化教学已帮助超过 3,000 名专业人士在 100+ 家企业中成功提升技能。',
+      'about-stat1': '马来西亚各地培训学员', 'about-stat2': '服务企业，大型与中小企业',
+      'about-stat3': 'HRD Corp 注册认可培训师', 'about-stat4n': '3 级别', 'about-stat4': '初级、中级与高级课程',
+      'photo-fallback-note': '将 clara-photo.jpg 放入文件夹替换',
+      'courses-label': '📚 线上课程', 'courses-title': '选择适合您的课程', 'courses-desc': '点击每个课程查看详细内容',
+      'inc-title': '🎁 全部课程均包含：',
+      'inc1': '♾️ 永久视频教学', 'inc2': '📜 HRDC 认证证书', 'inc3': '💬 永久 WhatsApp 支持', 'inc4': '📁 练习文件与实战案例', 'inc5': '♾️ 终身访问',
+      'hot': '🔥 热门', 'best': '最超值',
+      'c1-name': '小白入门 Mini', 'c1-sub': '完全零基础 · 短视频版',
+      'c1-f1': 'Excel 界面与基本操作', 'c1-f2': '输入数据与基础格式', 'c1-f3': 'SUM / AVERAGE / COUNT', 'c1-f4': '基础 Filter 与 Sort',
+      'c1-f5': '从0开始敢用 Excel！', 'c1-f6': '短视频格式，快速上手',
+      'c1-meta': '✦ 适合完全零基础人士', 'c1-btn': '💬 立即报名 RM49',
+      'c2-name': 'Excel 初级', 'c2-sub': '系统完整基础课程 · 详细视频讲解',
+      'c2-f1': 'Excel 界面与快捷键', 'c2-f2': 'IF / SUMIF / COUNTIF', 'c2-f3': 'VLOOKUP 与引用函数', 'c2-f4': '条件格式',
+      'c2-f5': '数据验证与筛选', 'c2-f6': '实际工作案例练习', 'c2-f7': 'Excel Tables 与图表', 'c2-f8': '导出 PDF 与打印设置',
+      'c2-meta': '✓ HRDC 可申请 · 20 课 · 10 小时', 'c2-btn': '💬 立即报名 RM199',
+      'c3-name': 'Excel 中级', 'c3-sub': '进阶数据分析 · XLOOKUP · PivotTable',
+      'c3-f1': 'XLOOKUP 与 INDEX MATCH', 'c3-f2': 'Pivot Table 数据分析 🔥', 'c3-f3': 'Power Query 基础', 'c3-f4': '数据清洗与整理',
+      'c3-f5': 'Dashboard 入门制作', 'c3-f6': 'What-If 分析', 'c3-f7': 'SUMIFS / COUNTIFS', 'c3-f8': '动态图表与 Slicers',
+      'c3-meta': '✓ HRDC 可申请 · 22 课 · 14 小时', 'c3-btn': '💬 立即报名 RM249',
+      'c4-name': 'Excel 高级', 'c4-name-sub': '+ AI 自动化', 'c4-sub': 'Power Query · VBA · Power Pivot · AI 工具',
+      'c4-f1': 'Power Query 高级自动化', 'c4-f2': 'VBA Macro 编写与录制', 'c4-f3': '交互式 Dashboard 制作', 'c4-f4': 'AI 生成公式与宏代码',
+      'c4-f5': 'Power Pivot 与 DAX', 'c4-f6': 'Copilot / Claude / ChatGPT', 'c4-f7': '动态图表与时间轴 Slicer', 'c4-f8': '综合项目：自动化报表系统',
+      'c4-meta': '✓ HRDC 可申请 · 25 课 · 18 小时', 'c4-btn': '💬 立即报名 RM299',
+      'c5-name': '全套课程包', 'c5-sub': 'Mini + 初级 + 中级 + 高级 + 50 个模板',
+      'c5-save': '🎉 <strong>节省 RM297！</strong> 比单独购买便宜 37%。一次拥有全套 Excel 从零到高级！',
+      'c5-b1n': '① 小白入门 Mini', 'c5-b2n': '② Excel 初级', 'c5-b3n': '③ Excel 中级', 'c5-b4n': '④ Excel 高级 + AI',
+      'c5-meta': '<strong>✓ HRDC 可申请</strong> · 省 RM297 · 最完整学习路径', 'c5-btn': '⭐ 全套报名 RM499',
+      'feat-label': '为什么选择 Clara Excel Academy', 'feat-title': '专为马来西亚职场人士打造',
+      'feat-desc': '每一堂课均以真实马来西亚职场场景、RM 货币及实用案例设计，让您学完即可应用。',
+      'feat1-title': '马来西亚情境', 'feat1-desc': 'RM 货币、本地名称、真实商业场景，以及多语言课程内容支持。',
+      'feat2-title': 'AI 融合学习', 'feat2-desc': '高级模块涵盖 Copilot、Claude 与 ChatGPT，用于 Excel 自动化及公式生成。',
+      'feat3-title': 'HRDC 可申请', 'feat3-desc': '所有课程均可通过 HRD Corp 申请津贴，为企业节省培训成本。',
+      'feat4-title': '认可培训师', 'feat4-desc': 'Clara 持有 Google 数据分析专业证书，并获 HRDC 认可。',
+      'feat5-title': '终身访问', 'feat5-desc': '永久回看所有课程，无期限限制，按自己的步伐学习。',
+      'feat6-title': '颁发证书', 'feat6-desc': '完成课程后获得专业结业证书，可在 LinkedIn 展示或向雇主呈交。',
+      'feat7-title': '企业培训', 'feat7-desc': '为团队量身定制内部培训，内容灵活，时间可协商。',
+      'feat8-title': 'Power BI 培训', 'feat8-desc': '除 Excel 外，Clara 亦提供 Power BI 与数据分析培训。',
+      'corp-title': '企业与团体培训',
+      'corp-desc': '为整个团队提供定制化 Excel、Power BI 及 AI 生产力培训。HRDC 可申请，时间灵活，内容按行业与工作流程量身定制。',
+      'corp-tag1': '✓ HRDC 可申请', 'corp-tag2': '✓ 线上或到场培训', 'corp-tag3': '✓ 定制内容', 'corp-tag4': '✓ Excel · Power BI · AI', 'corp-tag5': '✓ 颁发证书',
+      'corp-btn1': '📞 立即咨询', 'corp-btn2': '💬 WhatsApp',
+      'testi-label': '学员评价', 'testi-title': '他们这样说', 'testi-desc': '马来西亚各地专业人士通过 Clara Excel Academy 成功提升 Excel 技能。',
+      'testi1-text': '"Clara 的教学风格非常清晰实用。以马来西亚商业场景为例，让我轻松将所学应用到实际工作中。现在我每天都在用 PivotTable。"',
+      'testi1-role': '财务主任，吉隆坡',
+      'testi2-text': '"高级课程彻底改变了我的工作方式。用 AI 辅助学习 Power Query 和 VBA，让我发现了从未想过的自动化可能性。"',
+      'testi2-role': '数据分析师，白沙罗再也',
+      'testi3-text': '"我们团队 12 人完成了中级课程，全部 HRDC 申请。Clara 结构清晰的模块和终身访问让学习非常方便。"',
+      'testi3-role': '人力资源经理，沙阿南',
+      'faq-title': '常见问题', 'faq-desc': '报名前，您需要了解的一切。',
+      'faq1-q': '这些课程是否可以申请 HRDC / HRD Corp 津贴？',
+      'faq1-a': '是的——所有课程均可由符合资格的马来西亚雇主通过 HRD Corp 申请津贴。Clara 是已注册并认可的 HRD Corp 培训师。请 WhatsApp 我们获取官方课程代码及申请程序。',
+      'faq2-q': '我需要哪个版本的 Microsoft Excel？',
+      'faq2-a': '课程适用于 Excel 2019、2021 及 Microsoft 365。高级模块部分功能（XLOOKUP、FILTER）需要 Excel 365 或 2021。',
+      'faq3-q': '初级课程需要任何 Excel 基础吗？',
+      'faq3-a': '完全不需要！初级课程从零开始——认识功能区、基本导航和数据输入。',
+      'faq4-q': '课程访问权限有多长时间？',
+      'faq4-a': '终身访问。随时随地可回看任何课程内容——无到期日期限制。',
+      'faq5-q': '完成课程后是否有证书？',
+      'faq5-a': '有的。完成课程后获得数字结业证书，可在 LinkedIn 分享。',
+      'faq6-q': '我可以为整个团队或公司报名吗？',
+      'faq6-a': '可以。Clara Excel Academy 提供企业团体报名与定制化内部培训。请 WhatsApp +60 111 300 3886 获取企业培训方案。',
+      'faq7-q': '接受哪些付款方式？',
+      'faq7-a': '我们接受银行转账（FPX）、信用卡/借记卡及电子钱包。企业预订及 HRDC 申请请直接联系我们获取发票。',
+      'contact-label': '联系我们', 'contact-title': '随时联系，立即咨询',
+      'contact-desc': '无论是课程咨询、企业培训或 HRDC 申请，我们的团队随时为您服务。',
+      'cc1-role': '讲师 · 课程咨询 · HRDC',
+      'cc1-desc': '课程内容 · 报名咨询<br>HRDC 申请 · 培训安排',
+      'cc1-btn': '💬 WhatsApp Clara',
+      'cc2-name': '行政团队', 'cc2-role': '付款 · 报名 · 企业培训',
+      'cc2-desc': '付款确认 · 发票申请<br>企业团体报名 · 时间安排',
+      'cc2-btn': '💬 WhatsApp 行政',
+      'cc3-name': '电子邮件', 'cc3-role': '正式查询 · 报价单',
+      'cc3-desc': '正式报价单 · HRDC 文件<br>合作提案 · 企业合同',
+      'cc3-btn': '✉️ 发送电邮',
+      'hours-title': '⏰ 服务时间',
+      'hours-desc': '周一至周五：9:00 AM – 6:00 PM &nbsp;|&nbsp; 周六：9:00 AM – 1:00 PM &nbsp;|&nbsp; 周日及公假：休息',
+      'hours-btn1': '💬 Clara', 'hours-btn2': '💬 行政',
+      'cta-title': '立即开始您的 Excel 学习之旅',
+      'cta-desc': '加入超过 3,000 名马来西亚专业人士的行列，通过 Clara Excel Academy 提升职场竞争力。<br><em>HRDC 可申请 · 终身访问 · 颁发证书</em>',
+      'cta-btn1': '💬 WhatsApp Clara', 'cta-btn2': '💬 WhatsApp 行政', 'cta-btn3': '查看课程',
+      'footer-tagline': '马来西亚 HRDC 认可 Excel 与 AI 培训机构。帮助专业人士掌握实用数据技能。',
+      'footer-col1': '课程', 'footer-col2': '关于', 'footer-col3': '联系',
+      'footer-c1': 'Excel 入门 Mini — RM 49', 'footer-c2': 'Excel 初级 — RM 199', 'footer-c3': 'Excel 中级 — RM 249', 'footer-c4': 'Excel 高级 — RM 299', 'footer-c5': '企业培训',
+      'footer-co1': '关于 Clara', 'footer-co2': '常见问题', 'footer-co3': '联系我们', 'footer-co4': '作品集',
+      'footer-ct1': '💬 WhatsApp Clara', 'footer-ct2': '💬 WhatsApp 行政', 'footer-ct3': '✉️ 发送电邮',
+      'wa-popup-title': '💬 选择联系方式', 'wa-pop1-name': 'Clara — 课程咨询', 'wa-pop2-name': '行政 — 付款与报名',
+      'wa-main': '💬 联系我们'
+    },
+    ms: {
+      'nav-about': 'Tentang', 'nav-courses': 'Kursus', 'nav-corporate': 'Korporat', 'nav-contact': 'Hubungi', 'nav-cta': 'Daftar Sekarang',
+      'hero-badge': 'Jurulatih Bertauliah HRDC · Malaysia',
+      'hero-h1a': 'Kuasai Excel.', 'hero-h1b': 'Ubah Kerjaya Anda.',
+      'hero-desc': 'Latihan Excel & AI profesional oleh Clara Tan Chai Fang — dari Asas hingga Lanjutan. Boleh dituntut HRDC, kursus dalam talian bertahap sendiri untuk profesional Malaysia.',
+      'hero-btn1': 'Lihat Semua Kursus →', 'hero-btn2': '📱 WhatsApp Kami',
+      'stat1': 'Peserta', 'stat2': 'Syarikat', 'stat3': 'Bertauliah HRDC',
+      'float1-title': 'Boleh Tuntut HRDC', 'float1-sub': 'Latihan Bersubsidi',
+      'float2-title': 'Akses Seumur Hidup', 'float2-sub': 'Belajar pada kadar sendiri',
+      'trainer-role': 'Jurulatih Bertauliah HRDC · Excel & AI',
+      'preview1-name': 'Excel Asas', 'preview1-meta': '20 Pelajaran · 10 Jam',
+      'preview2-name': 'Excel Pertengahan', 'preview2-meta': '22 Pelajaran · 14 Jam',
+      'preview3-name': 'Excel Lanjutan', 'preview3-meta': '25 Pelajaran · 18 Jam',
+      'trust1-title': 'Bertauliah HRDC', 'trust1-sub': 'Jurulatih Berdaftar HRD Corp',
+      'trust2-title': 'Pembelajaran Kendiri', 'trust2-sub': 'Belajar bila-bila masa',
+      'trust3-title': 'Akses Seumur Hidup', 'trust3-sub': 'Tanpa tarikh tamat',
+      'trust4-title': 'Sijil Disediakan', 'trust4-sub': 'Sijil tamat kursus',
+      'trust5-title': '100+ Syarikat', 'trust5-sub': 'Rekod latihan korporat',
+      'about-label': 'Tentang Jurulatih', 'about-h2': 'Latihan Praktikal. Hasil Nyata.',
+      'about-role': 'Jurulatih Bertauliah HRDC · Pakar Excel & AI',
+      'tag1': 'Bertauliah HRDC', 'tag2': 'Google Data Analytics', 'tag3': 'Power BI', 'tag4': 'Pakar Excel', 'tag5': 'Alat AI',
+      'about-p1': 'Clara Tan Chai Fang adalah jurulatih bertauliah HRDC yang pakar dalam Microsoft Excel, Power BI, dan alat produktiviti AI. Dengan latar belakang analitik data dan pengalaman latihan korporat bertahun-tahun, Clara membawa kemahiran praktikal kepada setiap sesi.',
+      'about-p2': 'Pemegang sijil profesional Google Data Analytics dan Google Cloud Data Analytics, kursus Clara direka berdasarkan konteks perniagaan Malaysia sebenar.',
+      'about-p3': 'Sama ada anda kakitangan pentadbiran atau penganalisis data, pendekatan berstruktur Clara telah membantu lebih 3,000 profesional di 100+ syarikat.',
+      'about-stat1': 'Profesional dilatih di Malaysia', 'about-stat2': 'Syarikat korporat & PKS',
+      'about-stat3': 'Jurulatih berdaftar HRD Corp', 'about-stat4n': '3 Tahap', 'about-stat4': 'Asas, Pertengahan & Lanjutan',
+      'photo-fallback-note': 'Letak clara-photo.jpg dalam folder untuk gantikan',
+      'courses-label': '📚 Kursus Dalam Talian', 'courses-title': 'Pilih Kursus Anda', 'courses-desc': 'Klik setiap kad untuk melihat butiran',
+      'inc-title': '🎁 Setiap kursus termasuk:',
+      'inc1': '♾️ Video seumur hidup', 'inc2': '📜 Sijil HRDC', 'inc3': '💬 Sokongan WhatsApp', 'inc4': '📁 Fail latihan', 'inc5': '♾️ Akses Seumur Hidup',
+      'hot': '🔥 Popular', 'best': 'NILAI TERBAIK',
+      'c1-name': 'Asas Mini', 'c1-sub': 'Tanpa pengalaman · Format video pendek',
+      'c1-f1': 'Antara muka Excel & operasi asas', 'c1-f2': 'Kemasukan data & pemformatan asas', 'c1-f3': 'SUM / AVERAGE / COUNT', 'c1-f4': 'Filter & Sort asas',
+      'c1-f5': 'Bina keyakinan dari sifar', 'c1-f6': 'Pelajaran video pendek',
+      'c1-meta': '✦ Untuk pemula sepenuhnya', 'c1-btn': '💬 Daftar RM49',
+      'c2-name': 'Excel Asas', 'c2-sub': 'Kursus asas lengkap · Pelajaran video terperinci',
+      'c2-f1': 'Antara muka & pintasan Excel', 'c2-f2': 'IF / SUMIF / COUNTIF', 'c2-f3': 'VLOOKUP & fungsi carian', 'c2-f4': 'Pemformatan Bersyarat',
+      'c2-f5': 'Pengesahan Data & Filter', 'c2-f6': 'Latihan tempat kerja sebenar', 'c2-f7': 'Excel Tables & Carta', 'c2-f8': 'Eksport PDF & cetak',
+      'c2-meta': '✓ Boleh Tuntut HRDC · 20 Pelajaran · 10 Jam', 'c2-btn': '💬 Daftar RM199',
+      'c3-name': 'Excel Pertengahan', 'c3-sub': 'Analisis data · XLOOKUP · PivotTable',
+      'c3-f1': 'XLOOKUP & INDEX MATCH', 'c3-f2': 'Analisis PivotTable 🔥', 'c3-f3': 'Power Query asas', 'c3-f4': 'Pembersihan data',
+      'c3-f5': 'Pengenalan Dashboard', 'c3-f6': 'What-If Analysis', 'c3-f7': 'SUMIFS / COUNTIFS', 'c3-f8': 'Carta dinamik & Slicers',
+      'c3-meta': '✓ Boleh Tuntut HRDC · 22 Pelajaran · 14 Jam', 'c3-btn': '💬 Daftar RM249',
+      'c4-name': 'Excel Lanjutan', 'c4-name-sub': '+ Automasi AI', 'c4-sub': 'Power Query · VBA · Power Pivot · Alat AI',
+      'c4-f1': 'Automasi Power Query lanjutan', 'c4-f2': 'Penulisan & rakaman VBA Macro', 'c4-f3': 'Dashboard interaktif', 'c4-f4': 'Formula & kod dijana AI',
+      'c4-f5': 'Power Pivot & DAX', 'c4-f6': 'Copilot / Claude / ChatGPT', 'c4-f7': 'Slicer garis masa & carta dinamik', 'c4-f8': 'Capstone: pelaporan automatik',
+      'c4-meta': '✓ Boleh Tuntut HRDC · 25 Pelajaran · 18 Jam', 'c4-btn': '💬 Daftar RM299',
+      'c5-name': 'Pakej Lengkap', 'c5-sub': 'Mini + Asas + Pertengahan + Lanjutan + 50 Templat',
+      'c5-save': '🎉 <strong>Jimat RM297!</strong> 37% lebih murah daripada beli berasingan. Laluan pembelajaran Excel yang lengkap.',
+      'c5-b1n': '① Asas Mini', 'c5-b2n': '② Excel Asas', 'c5-b3n': '③ Excel Pertengahan', 'c5-b4n': '④ Excel Lanjutan + AI',
+      'c5-meta': '<strong>✓ Boleh Tuntut HRDC</strong> · Jimat RM297 · Laluan penuh', 'c5-btn': '⭐ Dapatkan Pakej RM499',
+      'feat-label': 'Mengapa Clara Excel Academy', 'feat-title': 'Dibina untuk Profesional Malaysia',
+      'feat-desc': 'Setiap pelajaran menggunakan konteks tempat kerja Malaysia sebenar, mata wang RM, dan contoh praktikal.',
+      'feat1-title': 'Konteks Malaysia', 'feat1-desc': 'Mata wang RM, nama tempatan, senario perniagaan Malaysia, sokongan pelbagai bahasa.',
+      'feat2-title': 'Bersepadu AI', 'feat2-desc': 'Modul lanjutan merangkumi Copilot, Claude, dan ChatGPT untuk automasi Excel.',
+      'feat3-title': 'Boleh Tuntut HRDC', 'feat3-desc': 'Semua kursus boleh dituntut HRD Corp untuk majikan Malaysia yang layak.',
+      'feat4-title': 'Jurulatih Bertauliah', 'feat4-desc': 'Bertauliah Google Data Analytics & HRDC dengan rekod prestasi terbukti.',
+      'feat5-title': 'Akses Seumur Hidup', 'feat5-desc': 'Tontonkan semula mana-mana pelajaran, bila-bila masa. Tiada tarikh tamat.',
+      'feat6-title': 'Sijil', 'feat6-desc': 'Sijil tamat kursus profesional untuk LinkedIn atau majikan.',
+      'feat7-title': 'Latihan Korporat', 'feat7-desc': 'Program latihan dalaman tersuai dengan kandungan dan jadual fleksibel.',
+      'feat8-title': 'Power BI Tersedia', 'feat8-desc': 'Selain Excel — latihan Power BI dan Analitik Data juga tersedia.',
+      'corp-title': 'Latihan Korporat & Kumpulan',
+      'corp-desc': 'Tingkatkan kemahiran seluruh pasukan anda dengan latihan Excel, Power BI, dan AI yang disesuaikan. Boleh dituntut HRDC.',
+      'corp-tag1': '✓ Boleh Tuntut HRDC', 'corp-tag2': '✓ Di Tapak atau Dalam Talian', 'corp-tag3': '✓ Kandungan Tersuai', 'corp-tag4': '✓ Excel · Power BI · AI', 'corp-tag5': '✓ Sijil',
+      'corp-btn1': '📞 Hubungi Sekarang', 'corp-btn2': '💬 WhatsApp',
+      'testi-label': 'Ulasan Pelajar', 'testi-title': 'Kata Mereka', 'testi-desc': 'Profesional di seluruh Malaysia telah meningkatkan kemahiran Excel mereka bersama Clara Excel Academy.',
+      'testi1-text': '"Gaya pengajaran Clara sungguh jelas dan praktikal. Contoh konteks perniagaan Malaysia memudahkan saya mengaitkan dengan kerja sebenar."',
+      'testi1-role': 'Eksekutif Kewangan, KL',
+      'testi2-text': '"Kursus Lanjutan benar-benar mengubah cara kerja saya. Belajar Power Query dan VBA dengan bantuan AI membuka kemungkinan automasi yang menakjubkan."',
+      'testi2-role': 'Penganalisis Data, PJ',
+      'testi3-text': '"Pasukan kami 12 orang menyelesaikan kursus Pertengahan, semua tuntutan HRDC. Modul berstruktur Clara dan akses seumur hidup sangat mudah."',
+      'testi3-role': 'Pengurus HR, Shah Alam',
+      'faq-title': 'Soalan Lazim', 'faq-desc': 'Semua yang perlu anda tahu sebelum mendaftar.',
+      'faq1-q': 'Adakah kursus ini boleh dituntut HRDC / HRD Corp?',
+      'faq1-a': 'Ya — semua kursus boleh dituntut di bawah HRD Corp untuk majikan Malaysia yang layak. Clara adalah jurulatih HRD Corp berdaftar. WhatsApp kami untuk kod kursus dan prosedur tuntutan.',
+      'faq2-q': 'Versi Microsoft Excel apakah yang saya perlukan?',
+      'faq2-a': 'Kursus direka untuk Excel 2019, 2021, dan Microsoft 365. Beberapa ciri Lanjutan (XLOOKUP, FILTER) memerlukan Excel 365 atau 2021.',
+      'faq3-q': 'Adakah saya memerlukan pengetahuan Excel untuk Asas?',
+      'faq3-a': 'Tidak. Kursus Asas bermula dari sifar — Ribbon, navigasi, dan kemasukan data.',
+      'faq4-q': 'Berapa lama saya mempunyai akses?',
+      'faq4-a': 'Akses seumur hidup. Tonton semula mana-mana pelajaran pada bila-bila masa — tiada tarikh tamat.',
+      'faq5-q': 'Adakah ada sijil selepas tamat?',
+      'faq5-a': 'Ya. Sijil tamat kursus digital yang boleh dikongsi di LinkedIn.',
+      'faq6-q': 'Bolehkah saya daftar seluruh pasukan?',
+      'faq6-a': 'Ya. Pendaftaran kumpulan korporat dan latihan dalaman tersuai tersedia. WhatsApp +60 111 300 3886 untuk cadangan.',
+      'faq7-q': 'Kaedah pembayaran apa diterima?',
+      'faq7-a': 'Pindahan bank (FPX), kad kredit/debit, dan e-dompet. Untuk tempahan korporat dan tuntutan HRDC, hubungi kami untuk invois.',
+      'contact-label': 'Hubungi Kami', 'contact-title': 'Hubungi Sekarang',
+      'contact-desc': 'Sama ada pertanyaan kursus, latihan korporat atau tuntutan HRDC — pasukan kami sedia membantu.',
+      'cc1-role': 'Jurulatih · Pertanyaan kursus · HRDC',
+      'cc1-desc': 'Kandungan kursus · Pendaftaran<br>Tuntutan HRDC · Jadual latihan',
+      'cc1-btn': '💬 WhatsApp Clara',
+      'cc2-name': 'Pasukan Admin', 'cc2-role': 'Pembayaran · Pendaftaran · Korporat',
+      'cc2-desc': 'Pengesahan pembayaran · Invois<br>Tempahan korporat · Penjadualan',
+      'cc2-btn': '💬 WhatsApp Admin',
+      'cc3-name': 'E-mel', 'cc3-role': 'Pertanyaan rasmi · Sebut harga',
+      'cc3-desc': 'Sebut harga rasmi · Dokumen HRDC<br>Perkongsian · Kontrak korporat',
+      'cc3-btn': '✉️ Hantar E-mel',
+      'hours-title': '⏰ Waktu Operasi',
+      'hours-desc': 'Isn–Jum: 9:00 AM – 6:00 PM &nbsp;|&nbsp; Sab: 9:00 AM – 1:00 PM &nbsp;|&nbsp; Ahad & CK: Tutup',
+      'hours-btn1': '💬 Clara', 'hours-btn2': '💬 Admin',
+      'cta-title': 'Mulakan Perjalanan Excel Anda Hari Ini',
+      'cta-desc': 'Sertai lebih 3,000 profesional Malaysia yang telah mengubah kerjaya mereka.<br><em>Boleh Tuntut HRDC · Akses Seumur Hidup · Sijil Disediakan</em>',
+      'cta-btn1': '💬 WhatsApp Clara', 'cta-btn2': '💬 WhatsApp Admin', 'cta-btn3': 'Lihat Kursus',
+      'footer-tagline': 'Akademi latihan Excel & AI bertauliah HRDC Malaysia. Membantu profesional menguasai kemahiran data praktikal.',
+      'footer-col1': 'Kursus', 'footer-col2': 'Syarikat', 'footer-col3': 'Hubungi',
+      'footer-c1': 'Asas Mini — RM 49', 'footer-c2': 'Excel Asas — RM 199', 'footer-c3': 'Excel Pertengahan — RM 249', 'footer-c4': 'Excel Lanjutan — RM 299', 'footer-c5': 'Latihan Korporat',
+      'footer-co1': 'Tentang Clara', 'footer-co2': 'Soalan Lazim', 'footer-co3': 'Hubungi', 'footer-co4': 'Portfolio',
+      'footer-ct1': '💬 WhatsApp Clara', 'footer-ct2': '💬 WhatsApp Admin', 'footer-ct3': '✉️ E-mel',
+      'wa-popup-title': '💬 Pilih Kenalan', 'wa-pop1-name': 'Clara — Pertanyaan kursus', 'wa-pop2-name': 'Admin — Pembayaran & pendaftaran',
+      'wa-main': '💬 WhatsApp Kami'
+    }
+  };
+
+  /* Cache the original English content once on first load so switching back works. */
+  let englishCache = null;
+  function cacheEnglish() {
+    if (englishCache) return;
+    englishCache = {};
+    document.querySelectorAll('[data-t]').forEach(el => {
+      englishCache[el.getAttribute('data-t')] = el.innerHTML;
+    });
+  }
+
   function setLang(lang) {
+    cacheEnglish();
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     document.getElementById('lang-' + lang).classList.add('active');
     document.documentElement.lang = lang === 'ms' ? 'ms' : lang === 'en' ? 'en' : 'zh-CN';
-    // Translation engine: in full version, swap [data-t] content here.
-    // For now buttons just record the choice — full translations preserved in the original pasted file if you want them re-added.
+    const dict = lang === 'en' ? englishCache : T[lang];
+    document.querySelectorAll('[data-t]').forEach(el => {
+      const key = el.getAttribute('data-t');
+      if (dict[key] !== undefined) el.innerHTML = dict[key];
+    });
+    try { localStorage.setItem('clara-lang', lang); } catch (e) {}
   }
+
   document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('row2').classList.add('open');
+    cacheEnglish();
+    /* Restore saved language preference, else stay on English */
+    let saved = 'en';
+    try { saved = localStorage.getItem('clara-lang') || 'en'; } catch (e) {}
+    if (saved !== 'en') setLang(saved);
   });
 </script>
 
