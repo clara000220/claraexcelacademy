@@ -1,0 +1,24 @@
+# Astro / Node leftovers (the project started as Astro before pivoting to static HTML — left on disk for reference, not pushed)
+node_modules/
+dist/
+.astro/
+.output/
+package.json
+package-lock.json
+astro.config.mjs
+tailwind.config.mjs
+tsconfig.json
+src/
+public/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs / env
+*.log
+.env
+.env.local
+.env.production
