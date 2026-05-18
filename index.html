@@ -281,6 +281,69 @@
   /* When Chinese is active, use the Chinese font for everything */
   html[lang="zh-CN"] body { font-family: 'Noto Sans SC', sans-serif; }
 
+  /* MEET TRAINER CARD */
+  .meet-trainer { background: var(--surface); padding: 60px 2rem; }
+  .meet-trainer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 280px 1fr; gap: 2.5rem; align-items: center; background: white; border: 1px solid var(--border); border-radius: 24px; padding: 2rem; box-shadow: 0 20px 60px rgba(15,23,42,0.06); }
+  .meet-trainer-photo { width: 100%; aspect-ratio: 1/1; border-radius: 20px; overflow: hidden; background: linear-gradient(135deg,#16a34a,#22c55e); }
+  .meet-trainer-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+  .meet-trainer-content .label { font-size: 11px; font-weight: 700; color: var(--green); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
+  .meet-trainer-content h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--navy); margin-bottom: 0.75rem; line-height: 1.2; }
+  .meet-trainer-content p.bio { color: var(--text-muted); font-size: 15px; line-height: 1.7; margin-bottom: 1.25rem; }
+  .meet-trainer-credentials { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.25rem; }
+  .meet-trainer-credentials .mt-tag { background: var(--green-light); color: var(--green-dark); border-radius: 20px; padding: 4px 12px; font-size: 11px; font-weight: 600; }
+  .meet-trainer-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--green); color: white; padding: 12px 24px; border-radius: 10px; font-size: 14px; font-weight: 700; text-decoration: none; transition: all 0.2s; }
+  .meet-trainer-cta:hover { background: var(--green-dark); transform: translateY(-1px); }
+  @media (max-width: 700px) {
+    .meet-trainer-inner { grid-template-columns: 1fr; text-align: center; padding: 1.5rem; }
+    .meet-trainer-photo { max-width: 200px; margin: 0 auto; }
+    .meet-trainer-credentials { justify-content: center; }
+  }
+
+  /* UPCOMING CLASSES */
+  .upcoming { background: linear-gradient(135deg, #fef9c3 0%, #fef3c7 100%); }
+  .upcoming-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; }
+  .upcoming-card { background: white; border-radius: 20px; padding: 1.75rem 1.5rem; box-shadow: 0 8px 24px rgba(15,23,42,0.08); position: relative; display: flex; flex-direction: column; }
+  .upcoming-badge { position: absolute; top: 1rem; right: 1rem; background: #f59e0b; color: white; font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .upcoming-icon { font-size: 40px; margin-bottom: 0.75rem; }
+  .upcoming-card h3 { font-family: 'Playfair Display', serif; font-size: 1.35rem; color: var(--navy); margin-bottom: 0.5rem; line-height: 1.2; }
+  .upcoming-card .uc-sub { font-size: 13px; color: var(--text-muted); font-style: italic; margin-bottom: 1rem; }
+  .upcoming-card ul { list-style: none; margin-bottom: 1.25rem; }
+  .upcoming-card ul li { font-size: 13px; color: var(--text); padding: 4px 0; display: flex; align-items: flex-start; gap: 8px; }
+  .upcoming-card ul li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; }
+  .upcoming-cta { display: inline-flex; align-items: center; justify-content: center; gap: 6px; background: var(--navy); color: white; padding: 10px 18px; border-radius: 10px; font-size: 13px; font-weight: 600; text-decoration: none; margin-top: auto; transition: all 0.2s; }
+  .upcoming-cta:hover { background: #1e3a5f; transform: translateY(-1px); }
+
+  /* COMPARISON TABLE */
+  .comparison { background: white; padding: 80px 2rem; }
+  .comparison-wrap { max-width: 1200px; margin: 0 auto; }
+  .comparison-table-scroll { overflow-x: auto; border-radius: 20px; box-shadow: 0 8px 32px rgba(15,23,42,0.08); }
+  .comparison-table { width: 100%; border-collapse: collapse; background: white; min-width: 720px; }
+  .comparison-table thead th { padding: 1.5rem 1rem; text-align: center; vertical-align: top; }
+  .comparison-table thead th.feat-col { background: var(--surface); text-align: left; border-bottom: 2px solid var(--border); }
+  .comparison-table thead .tier-name { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: white; line-height: 1.1; }
+  .comparison-table thead .tier-price { font-size: 22px; font-weight: 800; color: white; margin-top: 6px; line-height: 1; }
+  .comparison-table thead .tier-price small { font-size: 11px; font-weight: 500; opacity: 0.85; display: block; margin-top: 2px; }
+  .tier-mini   { background: linear-gradient(135deg,#1d7a3a,#22c55e); }
+  .tier-beg    { background: linear-gradient(135deg,#1e5ba8,#3b82f6); }
+  .tier-int    { background: linear-gradient(135deg,#c2410c,#f97316); }
+  .tier-adv    { background: linear-gradient(135deg,#6d28d9,#a855f7); }
+  .tier-bundle { background: linear-gradient(135deg,#0f172a,#1e3a5f); position: relative; }
+  .tier-bundle::after { content: '⭐ BEST'; position: absolute; top: 8px; right: 8px; background: #fbbf24; color: #1a1a1a; font-size: 9px; font-weight: 800; padding: 2px 6px; border-radius: 10px; }
+  .comparison-table tbody td { padding: 0.9rem 1rem; text-align: center; border-bottom: 1px solid var(--border); font-size: 14px; }
+  .comparison-table tbody td.feat-name { text-align: left; font-weight: 600; color: var(--navy); background: var(--surface); }
+  .comparison-table tbody td.yes { color: var(--green); font-size: 18px; font-weight: 700; }
+  .comparison-table tbody td.no { color: #cbd5e1; font-size: 16px; }
+  .comparison-table tbody tr:hover td:not(.feat-name) { background: #f0fdf4; }
+  .comparison-table tfoot td { padding: 1.2rem 0.6rem; text-align: center; background: var(--surface); border-top: 2px solid var(--border); }
+  .comparison-table tfoot .feat-name { background: var(--surface); }
+  .comparison-table tfoot .ct-btn { display: inline-block; padding: 8px 14px; border-radius: 8px; font-size: 12px; font-weight: 700; color: white; text-decoration: none; transition: transform 0.2s; }
+  .comparison-table tfoot .ct-btn:hover { transform: translateY(-1px); }
+  .ct-btn-mini   { background: #22c55e; }
+  .ct-btn-beg    { background: #3b82f6; }
+  .ct-btn-int    { background: #f97316; }
+  .ct-btn-adv    { background: #a855f7; }
+  .ct-btn-bundle { background: linear-gradient(135deg,#fbbf24,#f59e0b); color: #1a1a1a; }
+
   /* RESPONSIVE */
   @media (max-width: 900px) {
     .hero { grid-template-columns: 1fr; gap: 3rem; }
@@ -290,6 +353,7 @@
     .contact-cards { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
     .corporate-banner { grid-template-columns: 1fr; }
+    .upcoming-grid { grid-template-columns: 1fr; }
   }
   @media (max-width: 600px) {
     .features-grid { grid-template-columns: 1fr; }
@@ -330,6 +394,7 @@
       <p class="hero-desc" data-t="hero-desc">Professional Excel & AI training by Clara Tan Chai Fang — from Beginner to Advanced. HRDC claimable, self-paced online courses designed for Malaysian professionals.</p>
       <div class="hero-actions">
         <a href="#courses" class="btn-primary" data-t="hero-btn1">View All Courses →</a>
+        <a href="#meet-clara" class="btn-secondary" data-t="hero-btn-trainer">👋 Know Your Trainer</a>
         <a href="https://wa.me/601113003886" class="btn-secondary" data-t="hero-btn2">📱 WhatsApp Us</a>
       </div>
       <div class="hero-stats">
@@ -372,6 +437,25 @@
   </div>
 </section>
 
+<!-- MEET TRAINER -->
+<section class="meet-trainer" id="meet-clara">
+  <div class="meet-trainer-inner">
+    <div class="meet-trainer-photo"><img src="Clara.JPG" alt="Clara Tan Chai Fang"></div>
+    <div class="meet-trainer-content">
+      <div class="label" data-t="mt-label">Meet Your Trainer</div>
+      <h2 data-t="mt-title">Clara Tan Chai Fang</h2>
+      <p class="bio" data-t="mt-bio">HRDC-accredited Excel & AI trainer. Google Data Analytics certified. 3,000+ Malaysian professionals trained across 100+ companies. Practical, Malaysian-context teaching that you can apply on Monday morning.</p>
+      <div class="meet-trainer-credentials">
+        <span class="mt-tag" data-t="mt-tag1">HRDC Accredited</span>
+        <span class="mt-tag" data-t="mt-tag2">Google Data Analytics</span>
+        <span class="mt-tag" data-t="mt-tag3">Excel Expert</span>
+        <span class="mt-tag" data-t="mt-tag4">AI Tools Specialist</span>
+      </div>
+      <a href="#about" class="meet-trainer-cta" data-t="mt-cta">Read Full Story →</a>
+    </div>
+  </div>
+</section>
+
 <!-- TRUST BAND -->
 <div class="trust-band">
   <div class="trust-band-inner">
@@ -389,7 +473,7 @@
     <div class="about-grid">
       <div>
         <div class="about-photo-frame">
-          <div class="photo-area"><div class="photo-fallback">CTC<small data-t="photo-fallback-note">Drop clara-photo.jpg into folder to replace</small></div></div>
+          <div class="photo-area" style="padding:0;"><img src="Clara.JPG" alt="Clara Tan Chai Fang" style="width:100%; height:100%; object-fit:cover; object-position:top center; display:block;"></div>
           <div class="photo-info">
             <h3>Clara Tan Chai Fang</h3>
             <p data-t="about-role">HRDC Accredited Trainer · Excel &amp; AI Specialist</p>
@@ -573,6 +657,104 @@
           <div class="cr-hrdc" data-t="c5-meta"><strong>✓ HRDC Claimable</strong> · Save RM297 · Full learning path</div>
           <a href="https://wa.me/601113003886" class="cr-enroll-btn" style="background:linear-gradient(135deg,#fbbf24,#f59e0b);color:#1a1a1a;font-weight:800;" data-t="c5-btn">⭐ Get Bundle RM499</a>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="comparison">
+  <div class="comparison-wrap">
+    <div class="section-label" style="text-align:center;" data-t="cmp-label">Compare At A Glance</div>
+    <h2 class="section-title" style="text-align:center;" data-t="cmp-title">Every Course Includes</h2>
+    <p class="section-desc" style="text-align:center;margin:0 auto 2.5rem;" data-t="cmp-desc">Lifetime access, WhatsApp group support, certificate, exercises, and PDF notes — included in every tier. Higher tiers unlock more advanced skills.</p>
+
+    <div class="comparison-table-scroll">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th class="feat-col" data-t="cmp-features">Features</th>
+            <th class="tier-mini"><div class="tier-name" data-t="cmp-t1n">Mini</div><div class="tier-price">RM 49</div></th>
+            <th class="tier-beg"><div class="tier-name" data-t="cmp-t2n">Beginner</div><div class="tier-price">RM 199</div></th>
+            <th class="tier-int"><div class="tier-name" data-t="cmp-t3n">Intermediate</div><div class="tier-price">RM 249</div></th>
+            <th class="tier-adv"><div class="tier-name" data-t="cmp-t4n">Advanced</div><div class="tier-price">RM 299</div></th>
+            <th class="tier-bundle"><div class="tier-name" data-t="cmp-t5n">Bundle</div><div class="tier-price">RM 499 <small data-t="cmp-t5s">save RM297</small></div></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="feat-name" data-t="cmp-f1">♾️ Lifetime access</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="feat-name" data-t="cmp-f2">💬 WhatsApp group support</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="feat-name" data-t="cmp-f3">📜 Certificate of completion</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="feat-name" data-t="cmp-f4">📁 Exercise files</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="feat-name" data-t="cmp-f5">📝 Detailed PDF notes</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="feat-name" data-t="cmp-f6">🎓 HRDC claimable</td><td class="no">✗</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="feat-name" data-t="cmp-f7">🔍 VLOOKUP & lookup functions</td><td class="no">✗</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="feat-name" data-t="cmp-f8">📊 PivotTable & dashboards</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="feat-name" data-t="cmp-f9">⚡ Power Query automation</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="feat-name" data-t="cmp-f10">💻 VBA / Macros</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="feat-name" data-t="cmp-f11">🤖 AI tools (Copilot/Claude/ChatGPT)</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="feat-name" data-t="cmp-f12">🗂️ 50+ Excel templates</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td></tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="feat-name"></td>
+            <td><a href="https://wa.me/601113003886?text=Hi%20Clara%2C%20I%27d%20like%20to%20enrol%20in%20the%20Mini%20course." class="ct-btn ct-btn-mini" data-t="cmp-btn1">Get Mini</a></td>
+            <td><a href="https://wa.me/601113003886?text=Hi%20Clara%2C%20I%27d%20like%20to%20enrol%20in%20Excel%20Beginner." class="ct-btn ct-btn-beg" data-t="cmp-btn2">Get Beginner</a></td>
+            <td><a href="https://wa.me/601113003886?text=Hi%20Clara%2C%20I%27d%20like%20to%20enrol%20in%20Excel%20Intermediate." class="ct-btn ct-btn-int" data-t="cmp-btn3">Get Intermediate</a></td>
+            <td><a href="https://wa.me/601113003886?text=Hi%20Clara%2C%20I%27d%20like%20to%20enrol%20in%20Excel%20Advanced." class="ct-btn ct-btn-adv" data-t="cmp-btn4">Get Advanced</a></td>
+            <td><a href="https://wa.me/601113003886?text=Hi%20Clara%2C%20I%27d%20like%20the%20Complete%20Bundle." class="ct-btn ct-btn-bundle" data-t="cmp-btn5">⭐ Get Bundle</a></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- UPCOMING CLASSES -->
+<section class="upcoming" id="upcoming">
+  <div class="section-inner">
+    <div class="section-label" data-t="up-label">📅 Coming Soon</div>
+    <h2 class="section-title" data-t="up-title">Upcoming Classes</h2>
+    <p class="section-desc" data-t="up-desc">New courses launching soon. Join the waitlist via WhatsApp for early-bird pricing and launch announcements.</p>
+    <div class="upcoming-grid">
+      <div class="upcoming-card">
+        <div class="upcoming-badge" data-t="up-badge">Coming Soon</div>
+        <div class="upcoming-icon">🎨</div>
+        <h3 data-t="up1-name">Master Canva</h3>
+        <p class="uc-sub" data-t="up1-sub">Design like a pro — no design background needed.</p>
+        <ul>
+          <li data-t="up1-f1">Brand kit & social media templates</li>
+          <li data-t="up1-f2">Presentations & infographics</li>
+          <li data-t="up1-f3">Print designs (posters, name cards)</li>
+          <li data-t="up1-f4">AI-powered design with Canva Magic</li>
+        </ul>
+        <a href="https://wa.me/601113003886?text=Hi%20Clara%2C%20I%27d%20like%20to%20join%20the%20Master%20Canva%20waitlist." class="upcoming-cta" data-t="up1-cta">📩 Join Waitlist</a>
+      </div>
+      <div class="upcoming-card">
+        <div class="upcoming-badge" data-t="up-badge">Coming Soon</div>
+        <div class="upcoming-icon">📊</div>
+        <h3 data-t="up2-name">Google Sheets — All Levels</h3>
+        <p class="uc-sub" data-t="up2-sub">From beginner to advanced, including Apps Script.</p>
+        <ul>
+          <li data-t="up2-f1">All Excel skills, in Google Sheets</li>
+          <li data-t="up2-f2">QUERY, ARRAYFORMULA, IMPORTRANGE</li>
+          <li data-t="up2-f3">Apps Script automation</li>
+          <li data-t="up2-f4">Real-time collaboration workflows</li>
+        </ul>
+        <a href="https://wa.me/601113003886?text=Hi%20Clara%2C%20I%27d%20like%20to%20join%20the%20Google%20Sheets%20waitlist." class="upcoming-cta" data-t="up2-cta">📩 Join Waitlist</a>
+      </div>
+      <div class="upcoming-card">
+        <div class="upcoming-badge" data-t="up-badge">Coming Soon</div>
+        <div class="upcoming-icon">📈</div>
+        <h3 data-t="up3-name">Power BI Essentials</h3>
+        <p class="uc-sub" data-t="up3-sub">Build interactive dashboards & business intelligence reports.</p>
+        <ul>
+          <li data-t="up3-f1">Power BI Desktop & Service</li>
+          <li data-t="up3-f2">Data modelling & relationships</li>
+          <li data-t="up3-f3">DAX formulas for analysis</li>
+          <li data-t="up3-f4">Publishing & sharing dashboards</li>
+        </ul>
+        <a href="https://wa.me/601113003886?text=Hi%20Clara%2C%20I%27d%20like%20to%20join%20the%20Power%20BI%20waitlist." class="upcoming-cta" data-t="up3-cta">📩 Join Waitlist</a>
       </div>
     </div>
   </div>
@@ -907,7 +1089,32 @@
       'footer-co1': '关于 Clara', 'footer-co2': '常见问题', 'footer-co3': '联系我们', 'footer-co4': '作品集',
       'footer-ct1': '💬 WhatsApp Clara', 'footer-ct2': '💬 WhatsApp 行政', 'footer-ct3': '✉️ 发送电邮',
       'wa-popup-title': '💬 选择联系方式', 'wa-pop1-name': 'Clara — 课程咨询', 'wa-pop2-name': '行政 — 付款与报名',
-      'wa-main': '💬 联系我们'
+      'wa-main': '💬 联系我们',
+      'hero-btn-trainer': '👋 了解讲师',
+      'mt-label': '认识您的讲师', 'mt-title': 'Clara Tan Chai Fang',
+      'mt-bio': 'HRDC 认可 Excel 与 AI 培训师。Google 数据分析认证。已培训超过 3,000 名马来西亚专业人士，服务 100+ 家企业。实用、本地化的教学，让您周一早上就能立即应用。',
+      'mt-tag1': 'HRDC 认可', 'mt-tag2': 'Google 数据分析', 'mt-tag3': 'Excel 专家', 'mt-tag4': 'AI 工具专家',
+      'mt-cta': '阅读完整介绍 →',
+      'cmp-label': '一目了然比较', 'cmp-title': '每个课程均包含',
+      'cmp-desc': '终身访问、WhatsApp 群组支持、证书、练习题与 PDF 笔记 — 每个等级都包含。更高等级解锁更进阶的技能。',
+      'cmp-features': '功能特色',
+      'cmp-t1n': '小白入门', 'cmp-t2n': '初级', 'cmp-t3n': '中级', 'cmp-t4n': '高级', 'cmp-t5n': '全套', 'cmp-t5s': '省 RM297',
+      'cmp-f1': '♾️ 终身访问', 'cmp-f2': '💬 WhatsApp 群组支持', 'cmp-f3': '📜 结业证书', 'cmp-f4': '📁 练习题文件', 'cmp-f5': '📝 详细 PDF 笔记',
+      'cmp-f6': '🎓 HRDC 可申请', 'cmp-f7': '🔍 VLOOKUP 与引用函数', 'cmp-f8': '📊 PivotTable 与仪表板',
+      'cmp-f9': '⚡ Power Query 自动化', 'cmp-f10': '💻 VBA / Macros', 'cmp-f11': '🤖 AI 工具（Copilot/Claude/ChatGPT）', 'cmp-f12': '🗂️ 50+ Excel 模板',
+      'cmp-btn1': '报名小白入门', 'cmp-btn2': '报名初级', 'cmp-btn3': '报名中级', 'cmp-btn4': '报名高级', 'cmp-btn5': '⭐ 报名全套',
+      'up-label': '📅 即将推出', 'up-title': '即将开课',
+      'up-desc': '新课程即将推出。通过 WhatsApp 加入等候名单，获取早鸟优惠与开课通知。',
+      'up-badge': '即将推出',
+      'up1-name': '掌握 Canva', 'up1-sub': '无设计背景也能像专业人士一样设计。',
+      'up1-f1': '品牌套件与社交媒体模板', 'up1-f2': '演示文稿与信息图表', 'up1-f3': '印刷设计（海报、名片）', 'up1-f4': 'Canva Magic AI 辅助设计',
+      'up1-cta': '📩 加入等候名单',
+      'up2-name': 'Google Sheets — 全部等级', 'up2-sub': '从初学者到高级，包括 Apps Script。',
+      'up2-f1': '所有 Excel 技能，在 Google Sheets 中', 'up2-f2': 'QUERY、ARRAYFORMULA、IMPORTRANGE', 'up2-f3': 'Apps Script 自动化', 'up2-f4': '实时协作工作流程',
+      'up2-cta': '📩 加入等候名单',
+      'up3-name': 'Power BI 必备', 'up3-sub': '构建交互式仪表板与商业智能报告。',
+      'up3-f1': 'Power BI Desktop 与 Service', 'up3-f2': '数据建模与关系', 'up3-f3': '用于分析的 DAX 公式', 'up3-f4': '发布与共享仪表板',
+      'up3-cta': '📩 加入等候名单'
     },
     ms: {
       'nav-about': 'Tentang', 'nav-courses': 'Kursus', 'nav-corporate': 'Korporat', 'nav-contact': 'Hubungi', 'nav-cta': 'Daftar Sekarang',
@@ -1019,7 +1226,32 @@
       'footer-co1': 'Tentang Clara', 'footer-co2': 'Soalan Lazim', 'footer-co3': 'Hubungi', 'footer-co4': 'Portfolio',
       'footer-ct1': '💬 WhatsApp Clara', 'footer-ct2': '💬 WhatsApp Admin', 'footer-ct3': '✉️ E-mel',
       'wa-popup-title': '💬 Pilih Kenalan', 'wa-pop1-name': 'Clara — Pertanyaan kursus', 'wa-pop2-name': 'Admin — Pembayaran & pendaftaran',
-      'wa-main': '💬 WhatsApp Kami'
+      'wa-main': '💬 WhatsApp Kami',
+      'hero-btn-trainer': '👋 Kenali Jurulatih',
+      'mt-label': 'Kenali Jurulatih Anda', 'mt-title': 'Clara Tan Chai Fang',
+      'mt-bio': 'Jurulatih Excel & AI bertauliah HRDC. Bersijil Google Data Analytics. 3,000+ profesional Malaysia dilatih di 100+ syarikat. Pengajaran praktikal dengan konteks tempatan yang boleh diaplikasikan terus.',
+      'mt-tag1': 'Bertauliah HRDC', 'mt-tag2': 'Google Data Analytics', 'mt-tag3': 'Pakar Excel', 'mt-tag4': 'Pakar Alat AI',
+      'mt-cta': 'Baca Kisah Penuh →',
+      'cmp-label': 'Bandingkan Sepintas Lalu', 'cmp-title': 'Setiap Kursus Termasuk',
+      'cmp-desc': 'Akses seumur hidup, sokongan kumpulan WhatsApp, sijil, latihan, dan nota PDF — termasuk dalam setiap tahap. Tahap lebih tinggi membuka kemahiran lebih lanjut.',
+      'cmp-features': 'Ciri-ciri',
+      'cmp-t1n': 'Mini', 'cmp-t2n': 'Asas', 'cmp-t3n': 'Pertengahan', 'cmp-t4n': 'Lanjutan', 'cmp-t5n': 'Pakej Lengkap', 'cmp-t5s': 'jimat RM297',
+      'cmp-f1': '♾️ Akses seumur hidup', 'cmp-f2': '💬 Sokongan kumpulan WhatsApp', 'cmp-f3': '📜 Sijil tamat kursus', 'cmp-f4': '📁 Fail latihan', 'cmp-f5': '📝 Nota PDF terperinci',
+      'cmp-f6': '🎓 Boleh tuntut HRDC', 'cmp-f7': '🔍 VLOOKUP & fungsi carian', 'cmp-f8': '📊 PivotTable & papan pemuka',
+      'cmp-f9': '⚡ Automasi Power Query', 'cmp-f10': '💻 VBA / Makro', 'cmp-f11': '🤖 Alat AI (Copilot/Claude/ChatGPT)', 'cmp-f12': '🗂️ 50+ Templat Excel',
+      'cmp-btn1': 'Dapatkan Mini', 'cmp-btn2': 'Dapatkan Asas', 'cmp-btn3': 'Dapatkan Pertengahan', 'cmp-btn4': 'Dapatkan Lanjutan', 'cmp-btn5': '⭐ Dapatkan Pakej',
+      'up-label': '📅 Akan Datang', 'up-title': 'Kelas Akan Datang',
+      'up-desc': 'Kursus baharu akan dilancarkan tidak lama lagi. Sertai senarai menunggu melalui WhatsApp untuk harga lancar dan pengumuman.',
+      'up-badge': 'Akan Datang',
+      'up1-name': 'Kuasai Canva', 'up1-sub': 'Reka bentuk seperti pakar — tanpa latar belakang reka bentuk.',
+      'up1-f1': 'Kit jenama & templat media sosial', 'up1-f2': 'Persembahan & infografik', 'up1-f3': 'Reka bentuk cetakan (poster, kad nama)', 'up1-f4': 'Reka bentuk berkuasa AI dengan Canva Magic',
+      'up1-cta': '📩 Sertai Senarai Menunggu',
+      'up2-name': 'Google Sheets — Semua Tahap', 'up2-sub': 'Dari asas hingga lanjutan, termasuk Apps Script.',
+      'up2-f1': 'Semua kemahiran Excel, dalam Google Sheets', 'up2-f2': 'QUERY, ARRAYFORMULA, IMPORTRANGE', 'up2-f3': 'Automasi Apps Script', 'up2-f4': 'Aliran kerja kolaborasi masa nyata',
+      'up2-cta': '📩 Sertai Senarai Menunggu',
+      'up3-name': 'Power BI Asas', 'up3-sub': 'Bina papan pemuka interaktif & laporan kecerdasan perniagaan.',
+      'up3-f1': 'Power BI Desktop & Service', 'up3-f2': 'Pemodelan data & hubungan', 'up3-f3': 'Formula DAX untuk analisis', 'up3-f4': 'Menerbitkan & berkongsi papan pemuka',
+      'up3-cta': '📩 Sertai Senarai Menunggu'
     }
   };
 
