@@ -275,7 +275,8 @@
   .footer-inner { max-width: 1200px; margin: 0 auto; }
   .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
   .footer-brand p { font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.7; margin-top: 1rem; margin-bottom: 1.5rem; max-width: 280px; }
-  .footer-brand img { max-width: 240px; height: auto; filter: brightness(0) invert(1); }
+  .footer-brand .footer-logo-wrap { display: inline-block; background: var(--cream); padding: 14px 20px; border-radius: var(--radius-md); margin-bottom: 0.5rem; }
+  .footer-brand .footer-logo-wrap img { max-width: 200px; height: auto; display: block; }
   .footer-contact-item { display: flex; align-items: center; gap: 8px; font-size: 13px; color: rgba(255,255,255,0.7); margin-bottom: 8px; text-decoration: none; }
   .footer-contact-item:hover { color: #4ade80; }
   .footer-col h4 { font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.2rem; }
@@ -921,7 +922,7 @@
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="logo.png" alt="Clara Excel Academy">
+        <div class="footer-logo-wrap"><img src="logo.png" alt="Clara Excel Academy"></div>
         <p data-t="footer-tagline">Malaysia's HRDC-accredited Excel &amp; AI training academy. Helping professionals master practical data skills.</p>
         <a href="https://wa.me/601113003886" class="footer-contact-item">📱 Clara: +60 111-300 3886</a>
         <a href="https://wa.me/601161898230" class="footer-contact-item">📱 Admin: +60 11-6189 8230</a>
